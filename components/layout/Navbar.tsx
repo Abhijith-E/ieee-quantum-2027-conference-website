@@ -24,6 +24,7 @@ export default function Navbar() {
     { name: 'About', path: '/about' },
     { name: 'Call for Papers', path: '/call-for-papers' },
     { name: 'Program', path: '/program' },
+    { name: 'Workshops', path: '/workshops' },
     { name: 'Tracks', path: '/tracks' },
     { name: 'Speakers', path: '/speakers' },
     { name: 'Committee', path: '/committee' },
