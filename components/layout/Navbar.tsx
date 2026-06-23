@@ -88,10 +88,10 @@ export default function Navbar() {
         </div>
 
         {/* Desktop CTA */}
-        <div className="hidden md:block">
-          <button className="bg-transparent hover:bg-gold text-gold hover:text-navy font-bold py-2 px-6 border-2 border-gold rounded-full transition-all duration-300 uppercase tracking-wide text-sm">
+        <div className="hidden lg:block">
+          <Link href="/registration" className="bg-gold hover:bg-[#c4a132] text-white font-bold py-2.5 px-6 rounded-lg transition-colors shadow-sm">
             Register Now
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -195,9 +195,9 @@ export default function Navbar() {
                 </AnimatePresence>
               </div>
               
-              <button className="mt-6 w-full bg-gold text-navy font-bold py-3 rounded-xl uppercase tracking-wide text-lg">
+              <Link href="/registration" className="mt-6 flex items-center justify-center w-full bg-gold text-navy font-bold py-3 rounded-xl uppercase tracking-wide text-lg">
                 Register Now
-              </button>
+              </Link>
             </div>
           </motion.div>
         )}
