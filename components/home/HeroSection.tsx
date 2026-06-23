@@ -7,6 +7,7 @@ import * as THREE from 'three';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { colors } from '@/lib/tokens';
+import CountdownTimer from '@/components/shared/CountdownTimer';
 
 function ParticleBackground() {
   const ref = useRef<THREE.Points>(null);
@@ -45,63 +46,7 @@ function ParticleBackground() {
   );
 }
 
-const CountdownTimer = () => {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
-  useEffect(() => {
-    // Set target date for the conference (example: Nov 15, 2026)
-    const targetDate = new Date('2026-11-15T09:00:00Z').getTime();
-
-    const interval = setInterval(() => {
-      const now = new Date().getTime();
-      const difference = targetDate - now;
-
-      if (difference > 0) {
-        setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((difference % (1000 * 60)) / 1000),
-        });
-      }
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const timeBlocks = [
-    { label: 'DAYS', value: timeLeft.days },
-    { label: 'HOURS', value: timeLeft.hours },
-    { label: 'MINUTES', value: timeLeft.minutes },
-    { label: 'SECONDS', value: timeLeft.seconds },
-  ];
-
-  return (
-    <div className="flex space-x-4 md:space-x-8 backdrop-blur-md bg-white/5 border border-white/10 rounded-2xl px-6 py-4 md:px-8 shadow-2xl">
-      {timeBlocks.map((block, idx) => (
-        <div key={idx} className="flex flex-col items-center">
-          <div className="relative h-12 w-16 md:h-14 md:w-20 flex items-center justify-center overflow-hidden">
-            <AnimatePresence mode="popLayout">
-              <motion.span
-                key={block.value}
-                initial={{ y: -20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: 20, opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                className="absolute text-3xl md:text-5xl font-bold font-sans tabular-nums text-gold"
-              >
-                {String(block.value).padStart(2, '0')}
-              </motion.span>
-            </AnimatePresence>
-          </div>
-          <span className="text-[10px] md:text-xs font-medium tracking-widest text-slate-400 mt-1 uppercase">
-            {block.label}
-          </span>
-        </div>
-      ))}
-    </div>
-  );
-};
 
 export default function HeroSection() {
   const title = "IEEE CQTCS 2026";
@@ -176,7 +121,7 @@ export default function HeroSection() {
           transition={{ delay: 0.8 }}
           className="mb-12"
         >
-          <CountdownTimer />
+          <CountdownTimer targetDate="2026-11-15T09:00:00Z" />
         </motion.div>
 
         {/* CTAs */}

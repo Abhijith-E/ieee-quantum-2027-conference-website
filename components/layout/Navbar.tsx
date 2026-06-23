@@ -16,6 +16,7 @@ const ABOUT_ITEMS: DropdownItem[] = [
 
 const PROGRAM_ITEMS: DropdownItem[] = [
   { name: 'Technical Schedule', path: '/program' },
+  { name: 'Pre-Conference Events', path: '/pre-conference' },
   { name: 'Workshops & Tutorials', path: '/workshops' },
   { name: 'Keynotes & Speakers', path: '/speakers' },
   { name: 'Research Tracks', path: '/tracks' },
