@@ -26,6 +26,7 @@ const PROGRAM_ITEMS: DropdownItem[] = [
 const CFP_ITEMS: DropdownItem[] = [
   { name: 'Overview & Guidelines', path: '/call-for-papers' },
   { name: 'Abstract Submission', path: '/abstract-submission' },
+  { name: 'Poster Guidelines', path: '/poster-guidelines' },
 ];
 
 export default function Navbar() {
