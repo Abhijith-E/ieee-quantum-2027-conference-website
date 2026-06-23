@@ -28,6 +28,7 @@ const PROGRAM_ITEMS: DropdownItem[] = [
   { name: 'Workshops & Tutorials', path: '/workshops' },
   { name: 'Keynotes & Speakers', path: '/speakers' },
   { name: 'Research Tracks', path: '/tracks' },
+  { name: 'Social Events', path: '/social-events' },
 ];
 
 const CFP_ITEMS: DropdownItem[] = [
