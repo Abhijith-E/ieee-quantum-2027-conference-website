@@ -27,6 +27,7 @@ export default function Navbar() {
     { name: 'Speakers', path: '/speakers' },
     { name: 'Committee', path: '/committee' },
     { name: 'Patrons', path: '/patrons' },
+    { name: 'Advisory Committee', path: '/scientific-advisory-committee' },
   ];
 
   return (
