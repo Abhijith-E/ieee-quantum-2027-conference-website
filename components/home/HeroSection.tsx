@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { colors } from '@/lib/tokens';
 import CountdownTimer from '@/components/shared/CountdownTimer';
+import Link from 'next/link';
 
 function ParticleBackground() {
   const ref = useRef<THREE.Points>(null);
@@ -131,18 +132,30 @@ export default function HeroSection() {
           transition={{ delay: 1 }}
           className="flex flex-col sm:flex-row gap-4"
         >
-          <motion.button
-            whileHover={{ scale: 1.03, boxShadow: '0 0 32px rgba(212,175,55,0.4)' }}
-            className="bg-gold text-navy-deep font-bold rounded-xl px-8 py-4 transition-colors"
-          >
-            Submit Paper
-          </motion.button>
-          <motion.button
-            whileHover={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
-            className="border-2 border-white/20 text-white rounded-xl px-8 py-4 backdrop-blur-sm"
-          >
-            View Schedule
-          </motion.button>
+          <Link href="/abstract-submission">
+            <motion.div
+              whileHover={{ scale: 1.03, boxShadow: '0 0 32px rgba(212,175,55,0.4)' }}
+              className="bg-gold text-navy-deep font-bold rounded-xl px-8 py-4 transition-colors text-center inline-block cursor-pointer"
+            >
+              Submit Paper
+            </motion.div>
+          </Link>
+          <Link href="/program">
+            <motion.div
+              whileHover={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
+              className="border-2 border-white/20 text-white rounded-xl px-8 py-4 backdrop-blur-sm text-center inline-block cursor-pointer"
+            >
+              View Schedule
+            </motion.div>
+          </Link>
+          <Link href="/venue">
+            <motion.div
+              whileHover={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
+              className="border-2 border-white/20 text-white rounded-xl px-8 py-4 backdrop-blur-sm text-center inline-block cursor-pointer"
+            >
+              Venue Details
+            </motion.div>
+          </Link>
         </motion.div>
       </div>
 
