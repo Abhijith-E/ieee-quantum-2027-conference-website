@@ -12,6 +12,8 @@ const ABOUT_ITEMS: DropdownItem[] = [
   { name: 'Important Dates', path: '/dates' },
   { name: 'Organizing Committee', path: '/committee' },
   { name: 'Advisory Committee', path: '/scientific-advisory-committee' },
+  { name: 'Registration', path: '/registration' },
+  { name: 'Visa Support', path: '/visa' },
   { name: 'Distinguished Patrons', path: '/patrons' },
   { name: 'Accommodation', path: '/accommodation' },
   { name: 'Venue', path: '/venue' },
