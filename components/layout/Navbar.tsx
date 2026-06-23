@@ -35,6 +35,7 @@ const CFP_ITEMS: DropdownItem[] = [
   { name: 'Overview & Guidelines', path: '/call-for-papers' },
   { name: 'Abstract Submission', path: '/abstract-submission' },
   { name: 'Poster Guidelines', path: '/poster-guidelines' },
+  { name: 'Proceedings & IEEE Xplore', path: '/proceedings' },
 ];
 
 export default function Navbar() {
