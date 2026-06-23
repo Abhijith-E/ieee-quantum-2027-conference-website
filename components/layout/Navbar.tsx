@@ -16,6 +16,7 @@ const ABOUT_ITEMS: DropdownItem[] = [
   { name: 'Accommodation', path: '/accommodation' },
   { name: 'Venue', path: '/venue' },
   { name: 'How to Reach', path: '/how-to-reach' },
+  { name: 'Places to Visit', path: '/places-to-visit' },
 ];
 
 const PROGRAM_ITEMS: DropdownItem[] = [
