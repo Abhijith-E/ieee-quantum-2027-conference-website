@@ -15,6 +15,7 @@ const ABOUT_ITEMS: DropdownItem[] = [
   { name: 'Distinguished Patrons', path: '/patrons' },
   { name: 'Accommodation', path: '/accommodation' },
   { name: 'Venue', path: '/venue' },
+  { name: 'How to Reach', path: '/how-to-reach' },
 ];
 
 const PROGRAM_ITEMS: DropdownItem[] = [
