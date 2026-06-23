@@ -23,6 +23,11 @@ const PROGRAM_ITEMS: DropdownItem[] = [
   { name: 'Research Tracks', path: '/tracks' },
 ];
 
+const CFP_ITEMS: DropdownItem[] = [
+  { name: 'Overview & Guidelines', path: '/call-for-papers' },
+  { name: 'Abstract Submission', path: '/abstract-submission' },
+];
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,6 +36,7 @@ export default function Navbar() {
   // Mobile Accordion State
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [mobileProgramOpen, setMobileProgramOpen] = useState(false);
+  const [mobileCfpOpen, setMobileCfpOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,12 +83,7 @@ export default function Navbar() {
           
           <NavDropdown label="Program" items={PROGRAM_ITEMS} />
           
-          <Link 
-            href="/call-for-papers" 
-            className={`font-medium transition-colors ${pathname === '/call-for-papers' ? 'text-gold' : 'text-slate-300 hover:text-white'}`}
-          >
-            Call for Papers
-          </Link>
+          <NavDropdown label="Call for Papers" items={CFP_ITEMS} />
         </div>
 
         {/* Desktop CTA */}
@@ -167,9 +168,31 @@ export default function Navbar() {
                 </AnimatePresence>
               </div>
 
-              <Link href="/call-for-papers" className={`py-3 text-lg font-semibold ${pathname === '/call-for-papers' ? 'text-gold' : 'text-slate-300'}`}>
-                Call for Papers
-              </Link>
+              {/* Mobile Call for Papers Accordion */}
+              <div>
+                <button 
+                  onClick={() => setMobileCfpOpen(!mobileCfpOpen)}
+                  className="flex items-center justify-between w-full py-3 text-lg font-semibold text-slate-300"
+                >
+                  Call for Papers <ChevronDown className={`transition-transform ${mobileCfpOpen ? 'rotate-180' : ''}`} />
+                </button>
+                <AnimatePresence>
+                  {mobileCfpOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      className="flex flex-col gap-3 pl-4 pb-2 overflow-hidden"
+                    >
+                      {CFP_ITEMS.map(item => (
+                        <Link key={item.path} href={item.path} className={`text-base ${pathname === item.path ? 'text-gold' : 'text-slate-400'}`}>
+                          {item.name}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
               
               <button className="mt-6 w-full bg-gold text-navy font-bold py-3 rounded-xl uppercase tracking-wide text-lg">
                 Register Now
