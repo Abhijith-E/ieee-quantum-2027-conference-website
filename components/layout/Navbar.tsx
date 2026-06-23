@@ -13,6 +13,7 @@ const ABOUT_ITEMS: DropdownItem[] = [
   { name: 'Organizing Committee', path: '/committee' },
   { name: 'Advisory Committee', path: '/scientific-advisory-committee' },
   { name: 'Distinguished Patrons', path: '/patrons' },
+  { name: 'Accommodation', path: '/accommodation' },
 ];
 
 const PROGRAM_ITEMS: DropdownItem[] = [
