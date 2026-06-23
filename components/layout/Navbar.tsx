@@ -9,6 +9,7 @@ import NavDropdown, { DropdownItem } from './NavDropdown';
 
 const ABOUT_ITEMS: DropdownItem[] = [
   { name: 'About CQTCS', path: '/about' },
+  { name: 'Important Dates', path: '/dates' },
   { name: 'Organizing Committee', path: '/committee' },
   { name: 'Advisory Committee', path: '/scientific-advisory-committee' },
   { name: 'Distinguished Patrons', path: '/patrons' },
