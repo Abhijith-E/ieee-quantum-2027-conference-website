@@ -26,6 +26,7 @@ export default function Navbar() {
     { name: 'Tracks', path: '/tracks' },
     { name: 'Speakers', path: '/speakers' },
     { name: 'Committee', path: '/committee' },
+    { name: 'Patrons', path: '/patrons' },
   ];
 
   return (
