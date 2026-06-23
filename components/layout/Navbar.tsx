@@ -2,121 +2,180 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import NavDropdown, { DropdownItem } from './NavDropdown';
+
+const ABOUT_ITEMS: DropdownItem[] = [
+  { name: 'About CQTCS', path: '/about' },
+  { name: 'Organizing Committee', path: '/committee' },
+  { name: 'Advisory Committee', path: '/scientific-advisory-committee' },
+  { name: 'Distinguished Patrons', path: '/patrons' },
+];
+
+const PROGRAM_ITEMS: DropdownItem[] = [
+  { name: 'Technical Schedule', path: '/program' },
+  { name: 'Workshops & Tutorials', path: '/workshops' },
+  { name: 'Keynotes & Speakers', path: '/speakers' },
+  { name: 'Research Tracks', path: '/tracks' },
+];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+
+  // Mobile Accordion State
+  const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
+  const [mobileProgramOpen, setMobileProgramOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Call for Papers', path: '/call-for-papers' },
-    { name: 'Program', path: '/program' },
-    { name: 'Workshops', path: '/workshops' },
-    { name: 'Tracks', path: '/tracks' },
-    { name: 'Speakers', path: '/speakers' },
-    { name: 'Committee', path: '/committee' },
-    { name: 'Patrons', path: '/patrons' },
-    { name: 'Advisory Committee', path: '/scientific-advisory-committee' },
-  ];
+  // Close mobile menu on route change
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [pathname]);
 
   return (
-    <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-200 py-4' : 'bg-transparent py-6'
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-navy rounded flex items-center justify-center group-hover:bg-gold transition-colors">
-              <span className="text-white font-bold text-xs tracking-tighter">CQTCS</span>
-            </div>
-            <span className={`font-bold text-xl tracking-tight transition-colors ${isScrolled || pathname !== '/' ? 'text-navy' : 'text-white'}`}>
-              IEEE CQTCS
-            </span>
-          </Link>
+    <nav
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-[#0a0f1c]/95 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-5'
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className="w-10 h-10 bg-gold rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+            <span className="text-navy font-black text-xl tracking-tighter">CQ</span>
+          </div>
+          <div className="flex flex-col">
+            <span className="text-white font-bold text-lg leading-none tracking-wide">CQTCS</span>
+            <span className="text-gold text-xs font-semibold tracking-widest">2026 IEEE</span>
+          </div>
+        </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link 
-                key={link.name} 
-                href={link.path}
-                className={`text-sm font-semibold transition-colors hover:text-gold ${
-                  pathname === link.path 
-                    ? 'text-gold' 
-                    : (isScrolled || pathname !== '/' ? 'text-slate-600' : 'text-slate-200')
-                }`}
-              >
-                {link.name}
-              </Link>
-            ))}
-            <button className="bg-gold text-navy-deep font-bold px-5 py-2 rounded-lg hover:bg-yellow-500 transition-colors text-sm">
-              Register
-            </button>
-          </nav>
-
-          {/* Mobile Menu Toggle */}
-          <button 
-            className={`md:hidden p-2 ${isScrolled || pathname !== '/' ? 'text-navy' : 'text-white'}`}
-            onClick={() => setMobileMenuOpen(true)}
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-8">
+          <Link 
+            href="/" 
+            className={`font-medium transition-colors ${pathname === '/' ? 'text-gold' : 'text-slate-300 hover:text-white'}`}
           >
-            <Menu size={24} />
+            Home
+          </Link>
+          
+          <NavDropdown label="About" items={ABOUT_ITEMS} />
+          
+          <NavDropdown label="Program" items={PROGRAM_ITEMS} />
+          
+          <Link 
+            href="/call-for-papers" 
+            className={`font-medium transition-colors ${pathname === '/call-for-papers' ? 'text-gold' : 'text-slate-300 hover:text-white'}`}
+          >
+            Call for Papers
+          </Link>
+        </div>
+
+        {/* Desktop CTA */}
+        <div className="hidden md:block">
+          <button className="bg-transparent hover:bg-gold text-gold hover:text-navy font-bold py-2 px-6 border-2 border-gold rounded-full transition-all duration-300 uppercase tracking-wide text-sm">
+            Register Now
           </button>
         </div>
-      </header>
 
-      {/* Mobile Menu Overlay */}
+        {/* Mobile Menu Toggle */}
+        <button
+          className="md:hidden text-white p-2"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/* Mobile Navigation Drawer */}
       <AnimatePresence>
-        {mobileMenuOpen && (
+        {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] bg-navy/95 backdrop-blur-sm md:hidden"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-[#0a0f1c] border-t border-slate-800 overflow-hidden"
           >
-            <div className="flex flex-col h-full p-6">
-              <div className="flex justify-end">
-                <button onClick={() => setMobileMenuOpen(false)} className="text-white p-2">
-                  <X size={28} />
+            <div className="flex flex-col px-6 py-6 gap-2">
+              <Link href="/" className={`py-3 text-lg font-semibold ${pathname === '/' ? 'text-gold' : 'text-slate-300'}`}>
+                Home
+              </Link>
+              
+              {/* Mobile About Accordion */}
+              <div>
+                <button 
+                  onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
+                  className="flex items-center justify-between w-full py-3 text-lg font-semibold text-slate-300"
+                >
+                  About <ChevronDown className={`transition-transform ${mobileAboutOpen ? 'rotate-180' : ''}`} />
                 </button>
+                <AnimatePresence>
+                  {mobileAboutOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      className="flex flex-col gap-3 pl-4 pb-2 overflow-hidden"
+                    >
+                      {ABOUT_ITEMS.map(item => (
+                        <Link key={item.path} href={item.path} className={`text-base ${pathname === item.path ? 'text-gold' : 'text-slate-400'}`}>
+                          {item.name}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
-              <nav className="flex flex-col gap-6 mt-12">
-                {navLinks.map((link) => (
-                  <Link 
-                    key={link.name} 
-                    href={link.path}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={`text-2xl font-bold transition-colors ${
-                      pathname === link.path ? 'text-gold' : 'text-white hover:text-gold'
-                    }`}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-                <button className="bg-gold text-navy-deep font-bold px-6 py-4 rounded-xl mt-8 text-lg">
-                  Register Now
+
+              {/* Mobile Program Accordion */}
+              <div>
+                <button 
+                  onClick={() => setMobileProgramOpen(!mobileProgramOpen)}
+                  className="flex items-center justify-between w-full py-3 text-lg font-semibold text-slate-300"
+                >
+                  Program <ChevronDown className={`transition-transform ${mobileProgramOpen ? 'rotate-180' : ''}`} />
                 </button>
-              </nav>
+                <AnimatePresence>
+                  {mobileProgramOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      className="flex flex-col gap-3 pl-4 pb-2 overflow-hidden"
+                    >
+                      {PROGRAM_ITEMS.map(item => (
+                        <Link key={item.path} href={item.path} className={`text-base ${pathname === item.path ? 'text-gold' : 'text-slate-400'}`}>
+                          {item.name}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <Link href="/call-for-papers" className={`py-3 text-lg font-semibold ${pathname === '/call-for-papers' ? 'text-gold' : 'text-slate-300'}`}>
+                Call for Papers
+              </Link>
+              
+              <button className="mt-6 w-full bg-gold text-navy font-bold py-3 rounded-xl uppercase tracking-wide text-lg">
+                Register Now
+              </button>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </nav>
   );
 }
