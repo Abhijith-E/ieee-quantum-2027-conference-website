@@ -25,6 +25,7 @@ export default function Navbar() {
     { name: 'Call for Papers', path: '/call-for-papers' },
     { name: 'Tracks', path: '/tracks' },
     { name: 'Speakers', path: '/speakers' },
+    { name: 'Committee', path: '/committee' },
   ];
 
   return (
