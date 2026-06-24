@@ -48,7 +48,7 @@ export default function CountdownTimer({ targetDate, theme = 'dark' }: Countdown
     }`}>
       {timeBlocks.map((block, idx) => (
         <div key={idx} className="flex flex-col items-center">
-          <div className="relative h-12 w-16 md:h-14 md:w-20 flex items-center justify-center overflow-hidden">
+          <div className={`relative h-12 md:h-14 flex items-center justify-center overflow-hidden ${block.label === 'DAYS' && block.value > 99 ? 'w-20 md:w-28' : 'w-16 md:w-20'}`}>
             <AnimatePresence mode="popLayout">
               <motion.span
                 key={block.value}
