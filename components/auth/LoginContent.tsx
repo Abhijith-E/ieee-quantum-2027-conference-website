@@ -276,7 +276,7 @@ export default function LoginContent() {
           <div className="mt-8 text-center">
             <p className="text-sm text-slate-600">
               Don't have an account?{' '}
-              <Link href="/registration" className="font-bold text-navy hover:text-blue-700 hover:underline transition-all">
+              <Link href="/signup" className="font-bold text-navy hover:text-blue-700 hover:underline transition-all">
                 Create one &rarr;
               </Link>
             </p>
