@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial, Sphere, Float } from '@react-three/drei';
 import * as THREE from 'three';
@@ -12,9 +12,9 @@ import Link from 'next/link';
 import SearchModal from '@/components/ui/SearchModal';
 
 // --- Ultra Premium 3D Background ---
-function QuantumField() {
+function QuantumField({ isMobile }: { isMobile: boolean }) {
   const ref = useRef<THREE.Points>(null);
-  const count = 2000;
+  const count = isMobile ? 500 : 2000; // Reduce particles on mobile for performance
   
   // Create positions across a massive, screen-filling volume
   const positions = useMemo(() => {
@@ -52,7 +52,7 @@ function QuantumField() {
         <PointMaterial
           transparent
           color="#D4AF37" // Gold
-          size={0.06}
+          size={isMobile ? 0.08 : 0.06}
           sizeAttenuation={true}
           depthWrite={false}
           opacity={0.6}
@@ -88,6 +88,17 @@ function GlowingNodes() {
 
 export default function HeroSection() {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+    setMounted(true);
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const title = "IEEE ICQST 2027";
 
   return (
@@ -100,13 +111,15 @@ export default function HeroSection() {
       </div>
 
       {/* 3D Particle Canvas - Now Full Screen & Enabled on Mobile */}
-      <div className="absolute inset-0 z-0 opacity-80">
-        <Canvas camera={{ position: [0, 0, 8], fov: 60 }}>
-          <fog attach="fog" args={['#020617', 5, 20]} />
-          <QuantumField />
-          <GlowingNodes />
-        </Canvas>
-      </div>
+      {mounted && (
+        <div className="absolute inset-0 z-0 opacity-80">
+          <Canvas camera={{ position: [0, 0, 8], fov: 60 }}>
+            <fog attach="fog" args={['#020617', 5, 20]} />
+            <QuantumField isMobile={isMobile} />
+            {!isMobile && <GlowingNodes />}
+          </Canvas>
+        </div>
+      )}
 
       {/* Content Overlay */}
       <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-6 w-full max-w-6xl mx-auto pt-24 pb-16">

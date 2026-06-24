@@ -19,7 +19,7 @@ const newsreader = Newsreader({
 
 export const metadata: Metadata = {
   title: "IEEE ICQST 2027",
-  description: "International International Conference on Quantum Science and Technologies",
+  description: "International Conference on Quantum Science and Technologies",
 };
 
 export default function RootLayout({
