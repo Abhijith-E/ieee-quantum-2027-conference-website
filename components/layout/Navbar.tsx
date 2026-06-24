@@ -22,6 +22,7 @@ const ABOUT_ITEMS: DropdownItem[] = [
   { name: 'Places to Visit', path: '/places-to-visit' },
   { name: 'Sponsors & Partners', path: '/sponsors' },
   { name: 'Careers Board', path: '/careers' },
+  { name: 'Downloads Hub', path: '/downloads' },
 ];
 
 const PROGRAM_ITEMS: DropdownItem[] = [
