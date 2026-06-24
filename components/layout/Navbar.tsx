@@ -107,6 +107,9 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:block">
+          <Link href="/login" className="text-slate-200 hover:text-white font-semibold transition-colors px-4">
+            Sign In
+          </Link>
           <Link href="/registration" className="bg-gold hover:bg-[#c4a132] text-white font-bold py-2.5 px-6 rounded-lg transition-colors shadow-sm">
             Register Now
           </Link>
