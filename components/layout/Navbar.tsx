@@ -26,6 +26,7 @@ const ABOUT_ITEMS: DropdownItem[] = [
   { name: 'Code of Conduct & Ethics', path: '/ethics' },
   { name: 'Diversity, Equity & Inclusion', path: '/dei' },
   { name: 'Press & Media', path: '/press' },
+  { name: 'Frequently Asked Questions', path: '/faq' },
 ];
 
 const PROGRAM_ITEMS: DropdownItem[] = [
