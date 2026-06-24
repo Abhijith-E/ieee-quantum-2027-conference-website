@@ -7,7 +7,7 @@ export default function EarlyBirdBanner() {
   const [timeLeft, setTimeLeft] = useState<{ days: number, hours: number, minutes: number } | null>(null);
 
   useEffect(() => {
-    const targetDate = new Date('2026-08-15T23:59:59Z').getTime(); // Early Bird deadline
+    const targetDate = new Date('2026-12-15T23:59:59Z').getTime(); // Early Bird deadline
 
     const interval = setInterval(() => {
       const now = new Date().getTime();

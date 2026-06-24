@@ -36,7 +36,7 @@ export default function PreConfHero() {
             <span className="w-1.5 h-1.5 rounded-full bg-amber-300" />
             <div className="flex items-center gap-1.5 text-sm font-medium opacity-80">
               <Calendar size={14} />
-              Oct 11, 2026
+              Feb 16, 2027
             </div>
           </motion.div>
           

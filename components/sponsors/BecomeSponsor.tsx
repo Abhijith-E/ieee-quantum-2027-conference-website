@@ -21,7 +21,7 @@ export default function BecomeSponsor() {
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
 
           <div className="flex-1 relative z-10">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-6">Partner with CQTCS 2027</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-6">Partner with ICQST 2027</h2>
             <p className="text-slate-300 text-lg mb-8 leading-relaxed max-w-lg">
               Showcase your technological leadership. Align your brand with the foremost academic conference in quantum technologies and cyber security.
             </p>
@@ -36,7 +36,7 @@ export default function BecomeSponsor() {
             </ul>
 
             <div className="flex flex-wrap gap-4">
-              <a href="mailto:sponsors@cqtcs.in" className="inline-flex items-center gap-2 bg-transparent border-2 border-slate-500 hover:border-white text-white font-bold py-3 px-6 rounded-xl transition-colors">
+              <a href="mailto:sponsors@icqst.in" className="inline-flex items-center gap-2 bg-transparent border-2 border-slate-500 hover:border-white text-white font-bold py-3 px-6 rounded-xl transition-colors">
                 <Mail size={18} /> Contact Sponsorship Team
               </a>
             </div>

@@ -41,7 +41,7 @@ export default function SacHero() {
             variants={itemVariants} 
             className="text-xl text-slate-600 leading-relaxed max-w-2xl"
           >
-            Our rigorous international peer review process is guided by eminent researchers spanning over 40 countries, ensuring CQTCS maintains the highest standards of scientific excellence.
+            Our rigorous international peer review process is guided by eminent researchers spanning over 40 countries, ensuring ICQST maintains the highest standards of scientific excellence.
           </motion.p>
         </motion.div>
       </div>

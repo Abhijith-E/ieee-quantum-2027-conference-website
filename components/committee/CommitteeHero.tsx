@@ -42,7 +42,7 @@ export default function CommitteeHero() {
           </motion.h1>
 
           <motion.p variants={itemVariants} className="text-xl text-slate-600 leading-relaxed mt-10">
-            Meet the dedicated team of international experts and local volunteers working to make CQTCS 2026 a premier event for the global quantum community.
+            Meet the dedicated team of international experts and local volunteers working to make ICQST 2027 a premier event for the global quantum community.
           </motion.p>
         </motion.div>
       </div>

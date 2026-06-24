@@ -15,7 +15,7 @@ export default function AccessProceedings() {
             Your accepted and presented paper will officially appear on the IEEE Xplore Digital Library within <strong>4–8 weeks</strong> after the conference concludes.
           </p>
           <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-navy hover:bg-navy-deep text-white font-bold py-4 px-8 rounded-xl transition-colors shadow-md text-lg">
-            Search CQTCS on IEEE Xplore <ExternalLink size={20} />
+            Search ICQST on IEEE Xplore <ExternalLink size={20} />
           </a>
         </div>
 
@@ -25,10 +25,10 @@ export default function AccessProceedings() {
           </h3>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a href="#" className="bg-white border border-slate-200 hover:border-gold px-6 py-3 rounded-xl font-bold text-navy transition-colors shadow-sm text-sm">
-              CQTCS 2025 Proceedings
+              ICQST 2025 Proceedings
             </a>
             <a href="#" className="bg-white border border-slate-200 hover:border-gold px-6 py-3 rounded-xl font-bold text-navy transition-colors shadow-sm text-sm">
-              CQTCS 2023 Proceedings
+              ICQST 2023 Proceedings
             </a>
           </div>
         </div>

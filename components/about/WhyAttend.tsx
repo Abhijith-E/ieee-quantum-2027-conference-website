@@ -34,9 +34,9 @@ export default function WhyAttend() {
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">Why Attend CQTCS 2026?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-navy mb-4">Why Attend ICQST 2027?</h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Whether you're presenting groundbreaking research or looking to stay ahead of the quantum curve, CQTCS offers unparalleled value.
+            Whether you're presenting groundbreaking research or looking to stay ahead of the quantum curve, ICQST offers unparalleled value.
           </p>
         </div>
 

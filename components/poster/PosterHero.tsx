@@ -37,7 +37,7 @@ export default function PosterHero() {
             variants={itemVariants} 
             className="text-xl text-slate-600 leading-relaxed max-w-2xl"
           >
-            Present your research visually with maximum impact. Follow these guidelines to ensure your poster is accessible, professional, and compliant with CQTCS standards.
+            Present your research visually with maximum impact. Follow these guidelines to ensure your poster is accessible, professional, and compliant with ICQST standards.
           </motion.p>
         </motion.div>
       </div>

@@ -3,7 +3,7 @@ import AwardsHero from '@/components/awards/AwardsHero';
 import AwardCards from '@/components/awards/AwardCards';
 
 export const metadata = {
-  title: 'Best Paper Awards - IEEE CQTCS 2026',
+  title: 'Best Paper Awards - IEEE ICQST 2027',
   description: 'Recognizing excellence in quantum science and computer engineering research.',
 };
 

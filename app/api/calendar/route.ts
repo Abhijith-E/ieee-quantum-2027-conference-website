@@ -23,11 +23,11 @@ export async function GET() {
 
     return [
       'BEGIN:VEVENT',
-      `UID:${deadline.id}@cqtcs.ieee.org`,
+      `UID:${deadline.id}@icqst.ieee.org`,
       `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z`,
       `DTSTART;VALUE=DATE:${startStr}`,
       `DTEND;VALUE=DATE:${endStr}`,
-      `SUMMARY:CQTCS: ${deadline.title}`,
+      `SUMMARY:ICQST: ${deadline.title}`,
       'END:VEVENT'
     ].join('\r\n');
   });
@@ -35,7 +35,7 @@ export async function GET() {
   const icsContent = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//CQTCS IEEE 2026//Calendar//EN',
+    'PRODID:-//ICQST IEEE 2027//Calendar//EN',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     ...events,
@@ -45,7 +45,7 @@ export async function GET() {
   return new NextResponse(icsContent, {
     headers: {
       'Content-Type': 'text/calendar; charset=utf-8',
-      'Content-Disposition': 'attachment; filename="CQTCS_2026_Deadlines.ics"',
+      'Content-Disposition': 'attachment; filename="ICQST_2027_Deadlines.ics"',
     },
   });
 }

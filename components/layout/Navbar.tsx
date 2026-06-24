@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import NavDropdown, { DropdownItem } from './NavDropdown';
 
 const ABOUT_ITEMS: DropdownItem[] = [
-  { name: 'About CQTCS', path: '/about' },
+  { name: 'About ICQST', path: '/about' },
   { name: 'Important Dates', path: '/dates' },
   { name: 'Organizing Committee', path: '/committee' },
   { name: 'Advisory Committee', path: '/scientific-advisory-committee' },
@@ -84,8 +84,8 @@ export default function Navbar() {
             <span className="text-navy font-black text-xl tracking-tighter">CQ</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-white font-bold text-lg leading-none tracking-wide">CQTCS</span>
-            <span className="text-gold text-xs font-semibold tracking-widest">2026 IEEE</span>
+            <span className="text-white font-bold text-lg leading-none tracking-wide">ICQST</span>
+            <span className="text-gold text-xs font-semibold tracking-widest">2027 IEEE</span>
           </div>
         </Link>
 

@@ -38,7 +38,7 @@ export default function TracksHero() {
           </motion.h1>
 
           <motion.p variants={itemVariants} className="text-xl text-slate-600 leading-relaxed mt-10">
-            Explore the diverse areas of quantum technologies and computer science covered at CQTCS 2026. Submissions should align with one of the primary tracks below.
+            Explore the diverse areas of quantum technologies and computer science covered at ICQST 2027. Submissions should align with one of the primary tracks below.
           </motion.p>
         </motion.div>
       </div>

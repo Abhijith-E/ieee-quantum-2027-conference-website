@@ -47,7 +47,7 @@ export default function VirtualHero() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
-            Join CQTCS 2027 <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-yellow-200">from Anywhere</span>
+            Join ICQST 2027 <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-yellow-200">from Anywhere</span>
           </h1>
 
           <p className="text-xl text-white/80 leading-relaxed max-w-2xl font-medium">

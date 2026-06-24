@@ -8,7 +8,7 @@ export default function SocialTickets() {
   const addons = [
     { name: 'Conference Banquet (Accompanying Guest)', price: '₹1,500', includedFor: 'Primary Delegate', available: 'Yes' },
     { name: 'Cultural Evening — Karnataka Showcase', price: '₹500', includedFor: 'None (Add-on for all)', available: 'Yes' },
-    { name: 'Campus Tour & CQTCS Lab Visit', price: 'Free', includedFor: 'First 40 Registrants', available: 'Waitlist' }
+    { name: 'Campus Tour & ICQST Lab Visit', price: 'Free', includedFor: 'First 40 Registrants', available: 'Waitlist' }
   ];
 
   return (

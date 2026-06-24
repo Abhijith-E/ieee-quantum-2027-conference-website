@@ -9,7 +9,7 @@ export default function SocialEventsList() {
     {
       id: 'welcome',
       title: 'Welcome Reception',
-      date: 'Day 0 (Nov 14) • 6:30 PM - 8:30 PM',
+      date: 'Day 0 (Feb 14) • 6:30 PM - 8:30 PM',
       venue: 'University Central Atrium',
       dressCode: 'Smart Casual',
       capacity: 'All Attendees',
@@ -22,7 +22,7 @@ export default function SocialEventsList() {
     {
       id: 'banquet',
       title: 'Conference Banquet & Awards Gala',
-      date: 'Day 2 (Nov 16) • 7:30 PM - 10:30 PM',
+      date: 'Day 2 (Feb 18) • 7:30 PM - 10:30 PM',
       venue: 'Grand Ballroom, JW Marriott Bengaluru',
       dressCode: 'Formal',
       capacity: 'Ticketed (Pre-booking required)',
@@ -35,8 +35,8 @@ export default function SocialEventsList() {
     },
     {
       id: 'tour',
-      title: 'Campus Tour & CQTCS Lab Visit',
-      date: 'Day 3 (Nov 17) • 2:00 PM - 4:00 PM',
+      title: 'Campus Tour & ICQST Lab Visit',
+      date: 'Day 3 (Feb 19) • 2:00 PM - 4:00 PM',
       venue: 'Meet at Main Auditorium Foyer',
       dressCode: 'Casual (Comfortable shoes)',
       capacity: 'Max 40 participants',
@@ -44,12 +44,12 @@ export default function SocialEventsList() {
       icon: <Building2 className="text-stone-700" size={32} />,
       bg: 'bg-[#F9F6F0] border-[#E8E1D5]',
       text: 'text-stone-800',
-      desc: 'A guided tour of the beautiful CHRIST University campus, including exclusive access to the newly inaugurated CQTCS quantum computing laboratory facilities.'
+      desc: 'A guided tour of the beautiful CHRIST University campus, including exclusive access to the newly inaugurated ICQST quantum computing laboratory facilities.'
     },
     {
       id: 'mixer',
       title: 'Industry Networking Mixer',
-      date: 'Day 1 (Nov 15) • 6:00 PM - 8:00 PM',
+      date: 'Day 1 (Feb 17) • 6:00 PM - 8:00 PM',
       venue: 'Exhibition Hall A',
       dressCode: 'Business Casual',
       capacity: 'Open to All',
@@ -62,7 +62,7 @@ export default function SocialEventsList() {
     {
       id: 'cultural',
       title: 'Cultural Evening — Karnataka Showcase',
-      date: 'Day 1 (Nov 15) • 8:30 PM - 10:00 PM',
+      date: 'Day 1 (Feb 17) • 8:30 PM - 10:00 PM',
       venue: 'University Open-Air Theatre',
       dressCode: 'Casual / Traditional',
       capacity: 'Ticketed Add-on',

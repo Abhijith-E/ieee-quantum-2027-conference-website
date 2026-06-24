@@ -46,12 +46,12 @@ export default function ChairWelcome() {
             </div>
             
             <p className="font-serif italic text-2xl md:text-3xl text-slate-700 leading-relaxed mb-8">
-              "It is my distinct honor to welcome you to CQTCS 2026. As quantum technologies move from theoretical constructs to practical realities, this conference serves as a vital forum for the innovators who are building tomorrow's computational landscape. We look forward to your contributions and to fostering collaborations that will define the next decade of discovery."
+              "It is my distinct honor to welcome you to ICQST 2027. As quantum technologies move from theoretical constructs to practical realities, this conference serves as a vital forum for the innovators who are building tomorrow's computational landscape. We look forward to your contributions and to fostering collaborations that will define the next decade of discovery."
             </p>
 
             <div className="mt-8">
               <h4 className="text-2xl font-bold text-navy">Dr. Alan Placeholder</h4>
-              <p className="text-slate-500 font-medium tracking-wide">General Chair, CQTCS 2026</p>
+              <p className="text-slate-500 font-medium tracking-wide">General Chair, ICQST 2027</p>
               <p className="text-sm text-slate-400">Professor of Quantum Information, CHRIST University</p>
               
               {/* Signature Underline */}

@@ -72,7 +72,7 @@ export default function DeiContent() {
           <h2 className="text-3xl font-bold text-slate-800 mb-6">Our Commitment</h2>
           <div className="prose prose-slate text-slate-600">
             <p className="text-lg leading-relaxed">
-              We believe that the most profound breakthroughs in quantum computing and computer science happen when diverse minds collaborate. IEEE CQTCS 2026 is actively committed to removing barriers to participation and amplifying voices from all backgrounds.
+              We believe that the most profound breakthroughs in quantum computing and computer science happen when diverse minds collaborate. IEEE ICQST 2027 is actively committed to removing barriers to participation and amplifying voices from all backgrounds.
             </p>
             <p>
               Whether it is through travel grants, inclusive venue design, or strictly enforced anti-harassment policies, our goal is to ensure that everyone feels safe, welcome, and valued.
@@ -93,7 +93,7 @@ export default function DeiContent() {
             </div>
             <h2 className="text-3xl font-bold text-slate-800 mb-4">Travel & Participation Grants</h2>
             <p className="text-slate-600 mb-8 max-w-2xl text-lg">
-              To support students and early-career researchers from underrepresented groups, CQTCS offers financial assistance covering conference registration, accommodation, and partial travel stipends.
+              To support students and early-career researchers from underrepresented groups, ICQST offers financial assistance covering conference registration, accommodation, and partial travel stipends.
             </p>
 
             <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-emerald-100 mb-8 max-w-2xl">
@@ -113,7 +113,7 @@ export default function DeiContent() {
                 Apply for Travel Grant <ChevronRight size={20} />
               </button>
               <div className="text-sm font-medium text-emerald-800 bg-emerald-100 px-4 py-2 rounded-lg">
-                Deadline: September 1, 2026
+                Deadline: September 1, 2027
               </div>
             </div>
           </div>

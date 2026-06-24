@@ -27,7 +27,7 @@ export default function IEEESponsorship() {
                 </span>
               </div>
               <p className="text-slate-600 leading-relaxed text-sm">
-                CQTCS 2026 is proud to be technically co-sponsored by the IEEE Computer Society. All accepted and presented full papers will be submitted for inclusion into IEEE Xplore subject to meeting IEEE Xplore's scope and quality requirements. This partnership ensures that the research presented at CQTCS meets the highest international standards of academic rigor.
+                ICQST 2027 is proud to be technically co-sponsored by the IEEE Computer Society. All accepted and presented full papers will be submitted for inclusion into IEEE Xplore subject to meeting IEEE Xplore's scope and quality requirements. This partnership ensures that the research presented at ICQST meets the highest international standards of academic rigor.
               </p>
             </div>
           </div>

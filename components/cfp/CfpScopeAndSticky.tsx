@@ -12,7 +12,7 @@ export default function CfpScopeAndSticky() {
           <div className="w-full lg:w-2/3 prose prose-slate prose-lg max-w-none text-slate-600">
             <h2 className="text-3xl font-bold text-navy mb-6">Scope of the Conference</h2>
             <p>
-              The rapidly evolving landscape of quantum technologies requires a multidisciplinary approach. CQTCS 2026 aims to provide a comprehensive forum where theoretical computer science meets experimental physics. We invite authors to submit original, unpublished research papers that demonstrate novel ideas, significant results, and practical applications.
+              The rapidly evolving landscape of quantum technologies requires a multidisciplinary approach. ICQST 2027 aims to provide a comprehensive forum where theoretical computer science meets experimental physics. We invite authors to submit original, unpublished research papers that demonstrate novel ideas, significant results, and practical applications.
             </p>
             <p>
               Submissions may encompass fundamental theory, hardware implementation, software stack development, and hybrid classical-quantum systems. We particularly encourage interdisciplinary works that bridge the gap between quantum mechanics and classical information theory.

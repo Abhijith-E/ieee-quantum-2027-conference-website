@@ -31,9 +31,9 @@ export default function DeiHero() {
           </h1>
 
           <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mb-8 font-medium">
-            "Innovation in quantum technologies requires a multitude of perspectives. We are dedicated to ensuring CQTCS is a welcoming platform for everyone."
+            "Innovation in quantum technologies requires a multitude of perspectives. We are dedicated to ensuring ICQST is a welcoming platform for everyone."
             <br/>
-            <span className="text-sm font-bold text-slate-500 mt-2 block">— General Chairs, IEEE CQTCS 2026</span>
+            <span className="text-sm font-bold text-slate-500 mt-2 block">— General Chairs, IEEE ICQST 2027</span>
           </p>
 
         </motion.div>

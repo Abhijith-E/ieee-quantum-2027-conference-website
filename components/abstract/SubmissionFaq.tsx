@@ -28,7 +28,7 @@ const FAQS: FaqItem[] = [
   },
   {
     q: "When will I be notified of acceptance?",
-    a: "Notifications of abstract acceptance will be sent via email on July 1st, 2026. The full paper invitation will be included in that email."
+    a: "Notifications of abstract acceptance will be sent via email on July 1st, 2027. The full paper invitation will be included in that email."
   }
 ];
 

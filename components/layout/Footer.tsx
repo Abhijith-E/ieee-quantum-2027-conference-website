@@ -21,8 +21,8 @@ export default function Footer() {
               <span className="text-navy font-black text-xl tracking-tighter">CQ</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-white font-bold text-lg leading-none tracking-wide">CQTCS</span>
-              <span className="text-gold text-xs font-semibold tracking-widest">2026 IEEE</span>
+              <span className="text-white font-bold text-lg leading-none tracking-wide">ICQST</span>
+              <span className="text-gold text-xs font-semibold tracking-widest">2027 IEEE</span>
             </div>
           </div>
           
@@ -44,7 +44,7 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
             className="text-slate-400"
           >
-            &copy; {currentYear} IEEE International Conference on Quantum Technologies and Computer Science (CQTCS). All rights reserved.
+            &copy; {currentYear} IEEE International International Conference on Quantum Science and Technologies (ICQST). All rights reserved.
           </motion.p>
 
           {/* Premium Developer Tag */}

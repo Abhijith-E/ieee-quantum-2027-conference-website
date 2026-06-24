@@ -110,7 +110,7 @@ export default function AIAssistantFullPage() {
               </div>
               <div className="flex flex-col gap-4 max-w-2xl">
                 <div className="bg-slate-50 border border-slate-200 rounded-3xl rounded-tl-sm p-6 text-slate-700">
-                  <p className="font-medium">Welcome to the IEEE CQTCS 2026 AI Assistant!</p>
+                  <p className="font-medium">Welcome to the IEEE ICQST 2027 AI Assistant!</p>
                   <p className="text-sm mt-2">I have access to the full conference schedule, venue information, submission guidelines, and author policies. How can I help you today?</p>
                 </div>
 

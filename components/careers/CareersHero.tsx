@@ -26,7 +26,7 @@ export default function CareersHero() {
           </h1>
 
           <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mb-8">
-            Explore exclusive opportunities from leading organizations, startups, and academic institutions participating in the CQTCS conference.
+            Explore exclusive opportunities from leading organizations, startups, and academic institutions participating in the ICQST conference.
           </p>
 
         </motion.div>

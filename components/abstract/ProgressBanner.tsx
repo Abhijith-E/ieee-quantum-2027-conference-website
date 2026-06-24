@@ -53,7 +53,7 @@ export default function ProgressBanner() {
 
       {/* Note */}
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-center text-amber-900 w-full">
-        <span className="font-bold block mb-1">Abstract deadline: April 15, 2026</span>
+        <span className="font-bold block mb-1">Abstract deadline: April 15, 2027</span>
         <span className="text-sm opacity-90">Full paper invitation sent within 7 days of abstract acceptance.</span>
       </div>
 

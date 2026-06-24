@@ -40,7 +40,7 @@ export default function PreConfPricingTable() {
         </div>
 
         <div className="mt-8 text-center text-sm text-slate-500 bg-slate-50 py-3 rounded-lg border border-slate-100">
-          Registration will open on August 1st, 2026.
+          Registration will open on August 1st, 2027.
         </div>
       </div>
     </section>

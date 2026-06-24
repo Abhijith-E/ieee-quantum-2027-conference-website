@@ -25,7 +25,7 @@ const AWARDS: AwardData[] = [
     authors: 'Dr. Sarah Chen, Michael O. Rabin',
     institution: 'MIT Quantum Lab & IBM Research',
     abstractSnippet: 'We propose a novel methodology for implementing surface codes that significantly reduces the overhead required for fault-tolerant operations, demonstrating a 40% improvement in threshold bounds over standard protocols.',
-    doi: '10.1109/CQTCS.2026.001'
+    doi: '10.1109/ICQST.2027.001'
   },
   {
     id: 'best-student',
@@ -35,7 +35,7 @@ const AWARDS: AwardData[] = [
     authors: 'James Fowler (Ph.D. Candidate), Prof. Alice Williams',
     institution: 'Stanford University',
     abstractSnippet: 'A heuristic routing compiler that optimally maps logical qubits to physical topologies, decreasing SWAP gate insertions by 25% on heavy-hexagon architectures.',
-    doi: '10.1109/CQTCS.2026.024'
+    doi: '10.1109/ICQST.2027.024'
   },
   {
     id: 'best-poster',
@@ -45,7 +45,7 @@ const AWARDS: AwardData[] = [
     authors: 'Elena Rostova, et al.',
     institution: 'CERN / University of Geneva',
     abstractSnippet: 'An experimental demonstration of a 12-node QKD network deployed across existing metropolitan optical fiber infrastructure, achieving unprecedented secure key rates.',
-    doi: '10.1109/CQTCS.2026.105'
+    doi: '10.1109/ICQST.2027.105'
   },
   {
     id: 'best-qc',
@@ -55,7 +55,7 @@ const AWARDS: AwardData[] = [
     authors: 'Kenji Tanaka',
     institution: 'Tokyo Institute of Technology',
     abstractSnippet: 'This paper introduces a variation of QAOA adapted specifically for high-frequency trading constraints, outperforming classical simulated annealing heuristics on specific problem classes.',
-    doi: '10.1109/CQTCS.2026.042'
+    doi: '10.1109/ICQST.2027.042'
   },
   {
     id: 'best-qcomm',
@@ -65,7 +65,7 @@ const AWARDS: AwardData[] = [
     authors: 'Wei Zhang, Li Min',
     institution: 'National University of Singapore',
     abstractSnippet: 'Theoretical and simulated bounds for achieving continental-scale entanglement swapping using Low Earth Orbit (LEO) satellite constellations.',
-    doi: '10.1109/CQTCS.2026.088'
+    doi: '10.1109/ICQST.2027.088'
   },
   {
     id: 'honorable',
@@ -75,7 +75,7 @@ const AWARDS: AwardData[] = [
     authors: 'Amanda Wright, David Chen',
     institution: 'University of Waterloo',
     abstractSnippet: 'Applying deep reinforcement learning to autonomously tune qubit parameters, reducing calibration time by an order of magnitude.',
-    doi: '10.1109/CQTCS.2026.076'
+    doi: '10.1109/ICQST.2027.076'
   }
 ];
 
@@ -132,7 +132,7 @@ export default function AwardCards() {
                     To be announced at the<br/>
                     <span className="text-navy font-bold">Conference Banquet</span>
                   </p>
-                  <p className="text-sm text-slate-500 mt-2">November 16, 2026</p>
+                  <p className="text-sm text-slate-500 mt-2">February 18, 2027</p>
                 </div>
 
                 {/* Subtle Sealed Envelope Decor */}

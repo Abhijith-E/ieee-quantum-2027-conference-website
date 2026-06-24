@@ -13,7 +13,7 @@ export default function BookmarkButton({ sessionId }: BookmarkButtonProps) {
 
   useEffect(() => {
     // Read from localStorage on mount
-    const stored = localStorage.getItem('cqtcs_bookmarks');
+    const stored = localStorage.getItem('icqst_bookmarks');
     if (stored) {
       try {
         const parsed: string[] = JSON.parse(stored);
@@ -29,7 +29,7 @@ export default function BookmarkButton({ sessionId }: BookmarkButtonProps) {
   const toggleBookmark = (e: React.MouseEvent) => {
     e.stopPropagation(); // Prevent opening the drawer if inside a card
     
-    const stored = localStorage.getItem('cqtcs_bookmarks');
+    const stored = localStorage.getItem('icqst_bookmarks');
     let bookmarks: string[] = [];
     if (stored) {
       try {
@@ -47,7 +47,7 @@ export default function BookmarkButton({ sessionId }: BookmarkButtonProps) {
       setIsBookmarked(true);
     }
 
-    localStorage.setItem('cqtcs_bookmarks', JSON.stringify(bookmarks));
+    localStorage.setItem('icqst_bookmarks', JSON.stringify(bookmarks));
   };
 
   return (

@@ -23,9 +23,9 @@ const FAQS: FaqItem[] = [
   { id: 'sub-5', category: 'Submission', question: "Do you accept supplementary materials?", answer: "Yes, you can upload a ZIP file (max 20MB) containing datasets, extended proofs, or code to EDAS alongside your manuscript." },
   
   // Registration
-  { id: 'reg-1', category: 'Registration', question: "Can I get a refund if I cancel?", answer: "Full refunds (minus a $50 processing fee) are available until September 1, 2026. No refunds will be issued after this date." },
+  { id: 'reg-1', category: 'Registration', question: "Can I get a refund if I cancel?", answer: "Full refunds (minus a $50 processing fee) are available until September 1, 2027. No refunds will be issued after this date." },
   { id: 'reg-2', category: 'Registration', question: "Is IEEE membership required to attend?", answer: "No, non-members are welcome. However, IEEE and IEEE Computer Society members receive significant discounts on registration fees." },
-  { id: 'reg-3', category: 'Registration', question: "Can someone else attend in my place?", answer: "Yes, registration transfers are permitted until October 15, 2026. Please contact the registration chair to process the transfer." },
+  { id: 'reg-3', category: 'Registration', question: "Can someone else attend in my place?", answer: "Yes, registration transfers are permitted until October 15, 2027. Please contact the registration chair to process the transfer." },
   { id: 'reg-4', category: 'Registration', question: "When do I receive my receipt?", answer: "A formal tax invoice and receipt will be automatically emailed to you upon successful payment via the registration portal." },
   { id: 'reg-5', category: 'Registration', question: "Do student registrations cover banquet access?", answer: "Yes, all full conference registrations, including student tiers, include a ticket to the Conference Banquet." },
 

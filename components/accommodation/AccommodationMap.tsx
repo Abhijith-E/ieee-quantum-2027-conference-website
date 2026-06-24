@@ -13,7 +13,7 @@ export default function AccommodationMap() {
         <div>
           <h4 className="font-bold mb-1">Important Deadline</h4>
           <p className="text-sm font-medium">
-            University accommodation booking closes on <strong>September 15, 2026</strong>. Hotel availability is highly limited during the conference period due to concurrent city events. Please book early.
+            University accommodation booking closes on <strong>September 15, 2027</strong>. Hotel availability is highly limited during the conference period due to concurrent city events. Please book early.
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import FaqModule from '@/components/faq/FaqModule';
 
 export const metadata = {
-  title: 'Frequently Asked Questions - IEEE CQTCS 2026',
+  title: 'Frequently Asked Questions - IEEE ICQST 2027',
   description: 'Find answers to common questions about submission, registration, visas, the venue, and more.',
 };
 

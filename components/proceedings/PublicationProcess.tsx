@@ -6,7 +6,7 @@ export default function PublicationProcess() {
     { icon: <MailCheck size={24} />, title: 'Paper Accepted', date: 'Sep 15, 2027', status: 'past' },
     { icon: <UploadCloud size={24} />, title: 'Camera-Ready', date: 'Oct 15, 2027', status: 'active' },
     { icon: <FileSignature size={24} />, title: 'e-Copyright', date: 'Oct 20, 2027', status: 'future' },
-    { icon: <Layers size={24} />, title: 'Compilation', date: 'Nov 1, 2027', status: 'future' },
+    { icon: <Layers size={24} />, title: 'Compilation', date: 'Feb 1, 2027', status: 'future' },
     { icon: <Globe size={24} />, title: 'IEEE Xplore', date: 'Jan 2028', status: 'future' }
   ];
 

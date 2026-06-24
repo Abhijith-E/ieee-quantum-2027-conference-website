@@ -5,13 +5,13 @@ import { motion, useInView } from 'framer-motion';
 import { Check } from 'lucide-react';
 
 const milestones = [
-  { id: 1, title: 'Submission Open', date: 'January 15, 2026', past: true },
-  { id: 2, title: 'Abstract Deadline', date: 'March 30, 2026', past: true },
-  { id: 3, title: 'Full Paper Deadline', date: 'April 15, 2026', past: false },
-  { id: 4, title: 'Review Period', date: 'May - June 2026', past: false },
-  { id: 5, title: 'Author Notification', date: 'July 1, 2026', past: false },
-  { id: 6, title: 'Camera-Ready Due', date: 'August 15, 2026', past: false },
-  { id: 7, title: 'Conference Dates', date: 'Nov 15-17, 2026', past: false },
+  { id: 1, title: 'Submission Open', date: 'January 15, 2027', past: true },
+  { id: 2, title: 'Abstract Deadline', date: 'March 30, 2027', past: true },
+  { id: 3, title: 'Full Paper Deadline', date: 'April 15, 2027', past: false },
+  { id: 4, title: 'Review Period', date: 'May - June 2027', past: false },
+  { id: 5, title: 'Author Notification', date: 'July 1, 2027', past: false },
+  { id: 6, title: 'Camera-Ready Due', date: 'August 15, 2027', past: false },
+  { id: 7, title: 'Conference Dates', date: 'Feb 17-19, 2027', past: false },
 ];
 
 export default function Timeline() {

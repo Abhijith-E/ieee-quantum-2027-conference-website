@@ -24,7 +24,7 @@ export default function AboutHero() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-[64px] font-extrabold text-navy leading-tight mb-6"
           >
-            About IEEE CQTCS 2026
+            About IEEE ICQST 2027
           </motion.h1>
 
           <motion.div

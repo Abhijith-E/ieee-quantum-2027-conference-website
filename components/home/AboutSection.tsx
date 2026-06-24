@@ -27,7 +27,7 @@ export default function AboutSection() {
             
             <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
               <p>
-                The IEEE International Conference on Quantum Technologies and Computer Science (CQTCS) represents a premier global gathering of researchers, academics, and industry professionals at the cutting edge of quantum computing.
+                The IEEE International International Conference on Quantum Science and Technologies (ICQST) represents a premier global gathering of researchers, academics, and industry professionals at the cutting edge of quantum computing.
               </p>
               <p>
                 As quantum advantage becomes a reality, our conference provides a vital platform for disseminating breakthrough research in quantum algorithms, hardware architectures, cryptography, and the intersection of quantum mechanics with classical computer science.

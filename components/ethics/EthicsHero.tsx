@@ -27,7 +27,7 @@ export default function EthicsHero() {
           </h1>
 
           <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mb-8">
-            IEEE CQTCS Conference is committed to a respectful, inclusive, and rigorous scientific environment.
+            IEEE ICQST Conference is committed to a respectful, inclusive, and rigorous scientific environment.
           </p>
 
         </motion.div>

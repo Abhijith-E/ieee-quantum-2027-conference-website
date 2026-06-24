@@ -35,9 +35,9 @@ export default function OverviewContent() {
   ];
 
   const deadlines = [
-    { title: "Camera-Ready Submission", date: "Sep 15, 2026", status: "upcoming", daysLeft: 12 },
-    { title: "Presenter Registration", date: "Oct 1, 2026", status: "pending", daysLeft: 28 },
-    { title: "Conference Start", date: "Dec 12, 2026", status: "pending", daysLeft: 100 },
+    { title: "Camera-Ready Submission", date: "Sep 15, 2027", status: "upcoming", daysLeft: 12 },
+    { title: "Presenter Registration", date: "Oct 1, 2027", status: "pending", daysLeft: 28 },
+    { title: "Conference Start", date: "Dec 12, 2027", status: "pending", daysLeft: 100 },
   ];
 
   const recommendations = [

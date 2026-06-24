@@ -9,7 +9,7 @@ export async function POST(req: Request) {
     // registration status from the database.
 
     // 1. Mock: Generate a unique ID
-    const certificateId = `CQTCS-2027-${Math.random().toString(36).substr(2, 6).toUpperCase()}`;
+    const certificateId = `ICQST-2027-${Math.random().toString(36).substr(2, 6).toUpperCase()}`;
 
     // 2. Mock: Store record in Supabase
     /*

@@ -53,7 +53,7 @@ function ParticleBackground() {
 
 export default function HeroSection() {
   const [searchOpen, setSearchOpen] = useState(false);
-  const title = "IEEE CQTCS 2026";
+  const title = "IEEE ICQST 2027";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-navy-deep">
@@ -82,7 +82,7 @@ export default function HeroSection() {
           <div className="w-px h-6 bg-slate-400 opacity-50" />
           <div className="text-white/80 font-bold text-lg tracking-wider">CHRIST</div>
           <div className="w-px h-6 bg-slate-400 opacity-50" />
-          <div className="text-white/80 font-bold text-lg tracking-wider">CQTCS</div>
+          <div className="text-white/80 font-bold text-lg tracking-wider">ICQST</div>
         </motion.div>
 
         {/* Title */}
@@ -142,7 +142,7 @@ export default function HeroSection() {
           transition={{ delay: 0.8 }}
           className="mb-12"
         >
-          <CountdownTimer targetDate="2026-11-15T09:00:00Z" />
+          <CountdownTimer targetDate="2027-02-17T09:00:00Z" />
         </motion.div>
 
         {/* CTAs */}

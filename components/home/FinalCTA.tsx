@@ -87,7 +87,7 @@ export default function FinalCTA() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Be Part of <span className="text-gold">IEEE CQTCS 2026</span>
+            Be Part of <span className="text-gold">IEEE ICQST 2027</span>
           </h2>
           <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
             Join the brightest minds in quantum technologies. Submit your research or secure your spot as an attendee today.

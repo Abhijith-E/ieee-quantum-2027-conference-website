@@ -3,8 +3,8 @@ import ContactHero from '@/components/contact/ContactHero';
 import ContactContent from '@/components/contact/ContactContent';
 
 export const metadata = {
-  title: 'Contact Us - IEEE CQTCS 2026',
-  description: 'Get in touch with the organizing committee for IEEE CQTCS 2026.',
+  title: 'Contact Us - IEEE ICQST 2027',
+  description: 'Get in touch with the organizing committee for IEEE ICQST 2027.',
 };
 
 export default function ContactPage() {

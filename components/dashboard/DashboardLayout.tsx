@@ -59,7 +59,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             <div className="w-8 h-8 bg-navy text-gold rounded-lg flex items-center justify-center font-bold shadow-md group-hover:scale-105 transition-transform">
               Q
             </div>
-            <span className="font-bold text-navy text-sm tracking-wide">CQTCS 2026</span>
+            <span className="font-bold text-navy text-sm tracking-wide">ICQST 2027</span>
           </Link>
         </div>
 

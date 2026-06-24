@@ -19,21 +19,21 @@ import Link from 'next/link';
 // Mock Submissions
 const SUBMISSIONS = [
   {
-    id: "CQTCS-2026-104",
+    id: "ICQST-2027-104",
     title: "Scalable Error Mitigation Techniques in Deep Quantum Circuits",
     track: "Quantum Computing",
     authors: "Jane Doe, John Smith, Alice Johnson",
-    date: "Aug 12, 2026",
+    date: "Aug 12, 2027",
     statusIndex: 2, // 0: Submitted, 1: Under Review, 2: Decision, 3: Camera-Ready, 4: Published
     decision: "Accepted",
     reviewerComments: []
   },
   {
-    id: "CQTCS-2026-089",
+    id: "ICQST-2027-089",
     title: "Evaluating QML Baselines on NISQ Hardware",
     track: "QML",
     authors: "Jane Doe, Robert Chen",
-    date: "Jul 28, 2026",
+    date: "Jul 28, 2027",
     statusIndex: 2,
     decision: "Rejected",
     reviewerComments: [
@@ -42,11 +42,11 @@ const SUBMISSIONS = [
     ]
   },
   {
-    id: "CQTCS-2026-155",
+    id: "ICQST-2027-155",
     title: "Photonic Quantum Network Routing Protocols",
     track: "Quantum Communication",
     authors: "Jane Doe",
-    date: "Sep 02, 2026",
+    date: "Sep 02, 2027",
     statusIndex: 1, // Under Review
     decision: null,
     reviewerComments: []

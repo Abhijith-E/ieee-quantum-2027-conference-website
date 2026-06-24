@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
 const ProgramDocument = ({ sessions }: { sessions: Session[] }) => (
   <Document>
     <Page size="A4" style={styles.page}>
-      <Text style={styles.header}>CQTCS 2026 Technical Program</Text>
+      <Text style={styles.header}>ICQST 2027 Technical Program</Text>
       {sessions.map(session => (
         <View key={session.id} style={styles.sessionContainer}>
           <Text style={styles.time}>{session.day} | {session.startTime} - {session.endTime}</Text>
@@ -50,7 +50,7 @@ export default function PdfGenerator({ filteredSessions }: PdfGeneratorProps) {
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'CQTCS_Program.pdf';
+      link.download = 'ICQST_Program.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

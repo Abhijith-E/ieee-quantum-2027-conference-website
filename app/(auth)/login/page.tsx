@@ -2,7 +2,7 @@ import React from 'react';
 import LoginContent from '@/components/auth/LoginContent';
 
 export const metadata = {
-  title: 'Sign In - IEEE CQTCS 2026',
+  title: 'Sign In - IEEE ICQST 2027',
   description: 'Sign in to access your dashboard, schedule, and submissions.',
 };
 

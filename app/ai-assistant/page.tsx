@@ -2,7 +2,7 @@ import React from 'react';
 import AIAssistantFullPage from '@/components/ai/AIAssistantFullPage';
 
 export const metadata = {
-  title: 'AI Assistant - IEEE CQTCS 2026',
+  title: 'AI Assistant - IEEE ICQST 2027',
   description: 'Official AI conference assistant powered by Claude.',
 };
 

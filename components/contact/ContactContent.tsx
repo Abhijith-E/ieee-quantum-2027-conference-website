@@ -18,13 +18,13 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>;
 
 const COMMITTEE_CONTACTS = [
-  { role: "General Inquiries", name: "Dr. Ananya Sharma", title: "General Chair", email: "chair@cqtcs.in", initials: "AS" },
-  { role: "Paper Submission", name: "Prof. David Chen", title: "Program Chair", email: "tpc@cqtcs.in", initials: "DC" },
-  { role: "Registration", name: "Sarah Williams", title: "Registration Chair", email: "register@cqtcs.in", initials: "SW" },
-  { role: "Visa & International", name: "Priya Kumar", title: "Visa Support Officer", email: "visa@cqtcs.in", initials: "PK" },
-  { role: "Sponsorship", name: "Michael Chang", title: "Sponsorship Chair", email: "sponsor@cqtcs.in", initials: "MC" },
-  { role: "Press & Media", name: "Emma Thompson", title: "Media Relations Officer", email: "press@cqtcs.in", initials: "ET" },
-  { role: "Technical Support", name: "Rahul Dev", title: "Web Admin", email: "admin@cqtcs.in", initials: "RD" },
+  { role: "General Inquiries", name: "Dr. Ananya Sharma", title: "General Chair", email: "chair@icqst.in", initials: "AS" },
+  { role: "Paper Submission", name: "Prof. David Chen", title: "Program Chair", email: "tpc@icqst.in", initials: "DC" },
+  { role: "Registration", name: "Sarah Williams", title: "Registration Chair", email: "register@icqst.in", initials: "SW" },
+  { role: "Visa & International", name: "Priya Kumar", title: "Visa Support Officer", email: "visa@icqst.in", initials: "PK" },
+  { role: "Sponsorship", name: "Michael Chang", title: "Sponsorship Chair", email: "sponsor@icqst.in", initials: "MC" },
+  { role: "Press & Media", name: "Emma Thompson", title: "Media Relations Officer", email: "press@icqst.in", initials: "ET" },
+  { role: "Technical Support", name: "Rahul Dev", title: "Web Admin", email: "admin@icqst.in", initials: "RD" },
 ];
 
 export default function ContactContent() {
@@ -185,7 +185,7 @@ export default function ContactContent() {
             <div>
               <h3 className="font-bold text-lg mb-2">Conference Venue</h3>
               <p className="text-blue-100 text-sm leading-relaxed">
-                CQTCS Secretariat<br/>
+                ICQST Secretariat<br/>
                 CHRIST (Deemed to be University)<br/>
                 Hosur Road, Bhavani Nagar<br/>
                 Bengaluru, Karnataka 560029<br/>
@@ -245,7 +245,7 @@ export default function ContactContent() {
 
           <div className="flex flex-col items-center">
             <div className="bg-white p-2 rounded-xl shadow-sm border border-slate-200 mb-2">
-              <QRCodeSVG value="https://cqtcs.in" size={80} level="M" fgColor="#0F172A" />
+              <QRCodeSVG value="https://icqst.in" size={80} level="M" fgColor="#0F172A" />
             </div>
             <span className="text-[10px] font-bold text-slate-400 tracking-wider">SCAN TO SHARE</span>
           </div>

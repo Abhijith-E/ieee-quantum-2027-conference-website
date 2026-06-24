@@ -107,7 +107,7 @@ export default async function PreConferencePage() {
         <h2 className="text-2xl font-bold text-white mb-10 tracking-wide text-center">
           Time Remaining Until Day 0
         </h2>
-        <CountdownTimer targetDate="2026-10-11T09:00:00Z" theme="dark" />
+        <CountdownTimer targetDate="2027-02-16T09:00:00Z" theme="dark" />
       </section>
     </main>
   );

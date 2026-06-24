@@ -3,7 +3,7 @@ import PressHero from '@/components/press/PressHero';
 import PressContent from '@/components/press/PressContent';
 
 export const metadata = {
-  title: 'Press & Media Accreditation - IEEE CQTCS 2026',
+  title: 'Press & Media Accreditation - IEEE ICQST 2027',
   description: 'Covering the frontier of quantum science — we welcome accredited media.',
 };
 

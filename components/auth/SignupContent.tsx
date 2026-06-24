@@ -157,8 +157,8 @@ export default function SignupContent() {
               Q
             </div>
             <div>
-              <div className="text-white font-bold tracking-widest text-sm">IEEE CQTCS</div>
-              <div className="text-blue-300 text-xs">BENGALURU 2026</div>
+              <div className="text-white font-bold tracking-widest text-sm">IEEE ICQST</div>
+              <div className="text-blue-300 text-xs">BENGALURU 2027</div>
             </div>
           </Link>
         </div>
@@ -178,7 +178,7 @@ export default function SignupContent() {
         </div>
 
         <div className="relative z-10 text-slate-500 text-sm">
-          &copy; 2026 IEEE CQTCS. All rights reserved.
+          &copy; 2027 IEEE ICQST. All rights reserved.
         </div>
       </div>
 
@@ -188,7 +188,7 @@ export default function SignupContent() {
         <div className="absolute top-6 left-6 md:hidden">
           <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-navy text-gold rounded-lg flex items-center justify-center font-bold">Q</div>
-            <span className="text-navy font-bold text-sm">CQTCS 2026</span>
+            <span className="text-navy font-bold text-sm">ICQST 2027</span>
           </Link>
         </div>
 

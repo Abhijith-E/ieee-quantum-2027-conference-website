@@ -2,8 +2,8 @@ import React from 'react';
 import ResetPasswordContent from '@/components/auth/ResetPasswordContent';
 
 export const metadata = {
-  title: 'Reset Password - IEEE CQTCS 2026',
-  description: 'Create a new password for your IEEE CQTCS 2026 account.',
+  title: 'Reset Password - IEEE ICQST 2027',
+  description: 'Create a new password for your IEEE ICQST 2027 account.',
 };
 
 export default function ResetPasswordPage() {

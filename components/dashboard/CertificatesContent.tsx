@@ -44,7 +44,7 @@ export default function CertificatesContent() {
           </div>
           <h2 className="text-2xl font-bold text-navy mb-3">Certificates Locked</h2>
           <p className="text-slate-600 max-w-md mx-auto mb-8">
-            Your official certificates will be generated and available for download here automatically after the conference concludes on December 15, 2026.
+            Your official certificates will be generated and available for download here automatically after the conference concludes on December 15, 2027.
           </p>
           <div className="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-bold text-navy shadow-sm inline-flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
@@ -81,9 +81,9 @@ export default function CertificatesContent() {
                 <div className="absolute bottom-1 left-1 w-4 h-4 border-b-2 border-l-2 border-navy/20"></div>
                 <div className="absolute bottom-1 right-1 w-4 h-4 border-b-2 border-r-2 border-navy/20"></div>
                 
-                <div className="text-[8px] font-bold tracking-widest text-navy mb-2">IEEE CQTCS 2026</div>
+                <div className="text-[8px] font-bold tracking-widest text-navy mb-2">IEEE ICQST 2027</div>
                 <div className="text-xs font-serif italic text-gold-dark mb-1">{cert.title}</div>
-                <div className="text-[6px] text-slate-400 mt-auto">ID: CQTCS-{cert.id}9X2</div>
+                <div className="text-[6px] text-slate-400 mt-auto">ID: ICQST-{cert.id}9X2</div>
 
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-navy/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -106,7 +106,7 @@ export default function CertificatesContent() {
                 </button>
                 <div className="grid grid-cols-2 gap-3">
                   <a 
-                    href={`https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent(cert.title)}&organizationId=1337&issueYear=2026&issueMonth=12&certUrl=https://cqtcs.ieee.org/verify`}
+                    href={`https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${encodeURIComponent(cert.title)}&organizationId=1337&issueYear=2027&issueMonth=12&certUrl=https://icqst.ieee.org/verify`}
                     target="_blank" rel="noopener noreferrer"
                     className="w-full bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold py-2 px-3 rounded-xl transition-colors flex items-center justify-center gap-1.5 text-xs"
                   >
@@ -153,11 +153,11 @@ export default function CertificatesContent() {
               <p className="text-sm text-slate-500 mb-6">Scan this QR code to verify the cryptographic signature of this certificate on the blockchain.</p>
               
               <div className="bg-white p-4 border-2 border-slate-100 rounded-2xl mx-auto w-fit shadow-sm mb-6">
-                <QRCodeSVG value={`https://cqtcs.ieee.org/verify/CQTCS-${verifyOpen}9X2`} size={150} fgColor="#0F172A" />
+                <QRCodeSVG value={`https://icqst.ieee.org/verify/ICQST-${verifyOpen}9X2`} size={150} fgColor="#0F172A" />
               </div>
 
               <div className="text-xs text-slate-400 font-mono">
-                Verification ID: CQTCS-{verifyOpen}9X2-2026
+                Verification ID: ICQST-{verifyOpen}9X2-2027
               </div>
             </motion.div>
           </div>

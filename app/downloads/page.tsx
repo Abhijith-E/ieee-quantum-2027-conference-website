@@ -3,7 +3,7 @@ import DownloadsHero from '@/components/downloads/DownloadsHero';
 import DownloadsGrid from '@/components/downloads/DownloadsGrid';
 
 export const metadata = {
-  title: 'Downloads Hub - IEEE CQTCS 2026',
+  title: 'Downloads Hub - IEEE ICQST 2027',
   description: 'Official conference resources, templates, guides, and branding materials.',
 };
 

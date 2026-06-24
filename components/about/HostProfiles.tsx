@@ -41,11 +41,11 @@ export default function HostProfiles() {
             </a>
           </div>
 
-          {/* CQTCS Card */}
+          {/* ICQST Card */}
           <div className="bg-navy-deep rounded-3xl p-8 md:p-12 border border-slate-800 flex flex-col h-full shadow-[0_4px_24px_rgba(15,23,42,0.1)] hover:shadow-[0_16px_48px_rgba(15,23,42,0.2)] transition-shadow duration-300">
             <div className="flex items-center justify-between mb-8">
               <div className="w-40 h-16 bg-slate-800 border border-slate-700 rounded flex items-center justify-center font-bold text-slate-400">
-                CQTCS Logo
+                ICQST Logo
               </div>
               <div className="flex flex-col gap-2 items-end">
                 <span className="bg-slate-800 text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full border border-slate-700">

@@ -28,7 +28,7 @@ const InvitationDocument = ({ data }: { data: any }) => (
     <Page size="A4" style={styles.page}>
       <View style={styles.header}>
         <Text style={styles.universityName}>CHRIST (Deemed to be University)</Text>
-        <Text style={styles.conferenceName}>2027 IEEE Conference on Quantum Technologies</Text>
+        <Text style={styles.conferenceName}>2027 IEEE International Conference on Quantum Science and Technologies</Text>
         <Text style={styles.ieeeLine}>Bengaluru, India | Officially Supported by IEEE</Text>
       </View>
 
@@ -38,7 +38,7 @@ const InvitationDocument = ({ data }: { data: any }) => (
       <Text style={styles.body}>To Whom It May Concern,</Text>
 
       <Text style={styles.body}>
-        This letter is to formally invite {data.fullName} (Passport No: {data.passportNumber}, Nationality: {data.nationality}) to the 2027 IEEE Conference on Quantum Technologies and Cyber Security (CQTCS 2027).
+        This letter is to formally invite {data.fullName} (Passport No: {data.passportNumber}, Nationality: {data.nationality}) to the 2027 IEEE International Conference on Quantum Science and Technologies (ICQST 2027).
       </Text>
 
       <Text style={styles.body}>
@@ -47,18 +47,18 @@ const InvitationDocument = ({ data }: { data: any }) => (
       </Text>
 
       <Text style={styles.body}>
-        The conference will be held from November 15-17, 2027, at the CHRIST (Deemed to be University) Bannerghatta Road Campus, Bengaluru, India. We kindly request that you grant them the necessary entry visa to travel to India.
+        The conference will be held from February 17-19, 2027, at the CHRIST (Deemed to be University) Bannerghatta Road Campus, Bengaluru, India. We kindly request that you grant them the necessary entry visa to travel to India.
       </Text>
 
       <View style={styles.signatureSection}>
         <View style={styles.signLine} />
         <Text style={styles.bold}>Dr. Alan Turing</Text>
-        <Text>General Chair, CQTCS 2027</Text>
+        <Text>General Chair, ICQST 2027</Text>
       </View>
 
       <View style={styles.footer}>
-        <Text>Certificate ID: CQTCS-2027-{Math.random().toString(36).substr(2, 6).toUpperCase()}</Text>
-        <Text>Verify at: cqtcs.christuniversity.in/verify</Text>
+        <Text>Certificate ID: ICQST-2027-{Math.random().toString(36).substr(2, 6).toUpperCase()}</Text>
+        <Text>Verify at: icqst.christuniversity.in/verify</Text>
       </View>
     </Page>
   </Document>
@@ -88,7 +88,7 @@ export default function InvitationForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       role: 'Attendee',
-      purpose: 'To attend sessions and network at the 2027 IEEE Conference on Quantum Technologies.',
+      purpose: 'To attend sessions and network at the 2027 IEEE International Conference on Quantum Science and Technologies.',
     }
   });
 
@@ -300,7 +300,7 @@ export default function InvitationForm() {
               </button>
             </div>
             <p className="text-sm text-emerald-700 mt-6 mt-8 border-t border-emerald-200 pt-6">
-              If your consulate specifically requires a physically stamped and mailed hard copy, please contact <a href="mailto:visa@cqtcs.in" className="font-bold underline">visa@cqtcs.in</a>.
+              If your consulate specifically requires a physically stamped and mailed hard copy, please contact <a href="mailto:visa@icqst.in" className="font-bold underline">visa@icqst.in</a>.
             </p>
           </motion.div>
         )}

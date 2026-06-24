@@ -41,7 +41,7 @@ export default function WorkshopsHero() {
             variants={itemVariants} 
             className="text-xl text-slate-600 leading-relaxed max-w-2xl"
           >
-            Enhance your CQTCS experience with specialized half-day and full-day deep dives into emerging quantum technologies and methodologies.
+            Enhance your ICQST experience with specialized half-day and full-day deep dives into emerging quantum technologies and methodologies.
           </motion.p>
         </motion.div>
       </div>

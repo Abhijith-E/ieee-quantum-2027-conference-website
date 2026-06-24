@@ -96,7 +96,7 @@ export default function AIAssistantWidget() {
                     <Bot size={16} />
                   </div>
                   <div className="bg-white border border-slate-200 rounded-2xl rounded-tl-sm p-4 text-sm text-slate-700 shadow-sm max-w-[85%]">
-                    <p>Hello! I'm your official IEEE CQTCS 2026 AI Assistant. I can help you with scheduling, venue details, submission deadlines, and more.</p>
+                    <p>Hello! I'm your official IEEE ICQST 2027 AI Assistant. I can help you with scheduling, venue details, submission deadlines, and more.</p>
                   </div>
                 </motion.div>
               )}
@@ -180,7 +180,7 @@ export default function AIAssistantWidget() {
                 <input
                   value={input}
                   onChange={handleInputChange}
-                  placeholder="Ask anything about CQTCS 2026..."
+                  placeholder="Ask anything about ICQST 2027..."
                   className="w-full pl-4 pr-12 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-gold focus:ring-4 focus:ring-gold/20 transition-all"
                   disabled={isLoading}
                 />

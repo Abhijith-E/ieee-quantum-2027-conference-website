@@ -19,7 +19,7 @@ async function getWorkshopsData(): Promise<WorkshopEvent[]> {
       },
       abstract: 'This full-day workshop offers a deep dive into implementing quantum machine learning algorithms using Qiskit and PennyLane. Participants will start with the theoretical foundations of parameterized quantum circuits and build up to training variational quantum classifiers on real hardware. We will cover essential techniques like barren plateau mitigation and hardware-efficient ansatz design. Please bring a laptop with Python installed.',
       topics: ['QML', 'Variational Algorithms', 'PennyLane', 'Qiskit'],
-      date: 'Oct 11, 2026',
+      date: 'Feb 16, 2027',
       time: '09:00 - 17:00',
       room: 'Lab 1',
       requiresSeparateRegistration: true
@@ -35,7 +35,7 @@ async function getWorkshopsData(): Promise<WorkshopEvent[]> {
       },
       abstract: 'An intensive half-day session focused on surface codes and lattice surgery. We will analyze the latest decoder architectures, including Union-Find and matching-based decoders, examining their threshold performance. The workshop will include a hands-on session using the Stim simulator.',
       topics: ['Error Correction', 'Surface Codes', 'Decoders', 'Stim'],
-      date: 'Oct 11, 2026',
+      date: 'Feb 16, 2027',
       time: '13:00 - 17:00',
       room: 'Room A',
       requiresSeparateRegistration: true
@@ -51,7 +51,7 @@ async function getWorkshopsData(): Promise<WorkshopEvent[]> {
       },
       abstract: 'A comprehensive tutorial designed for cybersecurity professionals transitioning into the quantum domain. This session covers the BB84 protocol, E91 protocol, and practical challenges in quantum key distribution (QKD) such as photon loss and detector blinding attacks.',
       topics: ['QKD', 'BB84', 'Cybersecurity', 'Entanglement'],
-      date: 'Oct 11, 2026',
+      date: 'Feb 16, 2027',
       time: '09:00 - 12:30',
       room: 'Room B',
       requiresSeparateRegistration: false
@@ -67,7 +67,7 @@ async function getWorkshopsData(): Promise<WorkshopEvent[]> {
       },
       abstract: 'Learn how to optimize quantum circuits for noisy intermediate-scale quantum (NISQ) devices. This tutorial covers pulse-level control, dynamical decoupling, and routing algorithms tailored specifically for heavy-hex superconducting architectures.',
       topics: ['Compilers', 'Superconducting Qubits', 'Optimization', 'Pulse Control'],
-      date: 'Oct 11, 2026',
+      date: 'Feb 16, 2027',
       time: '09:00 - 17:00',
       room: 'Lab 2',
       requiresSeparateRegistration: true

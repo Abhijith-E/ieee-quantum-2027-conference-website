@@ -42,7 +42,7 @@ export default function CfpHero() {
           </motion.h1>
 
           <motion.p variants={itemVariants} className="text-xl text-slate-600 leading-relaxed mt-10">
-            The IEEE International Conference on Quantum Technologies and Computer Science (CQTCS 2026) invites high-quality, original research submissions. Join us in shaping the future of quantum computing, algorithms, cryptography, and their integration with classical systems.
+            The IEEE International International Conference on Quantum Science and Technologies (ICQST 2027) invites high-quality, original research submissions. Join us in shaping the future of quantum computing, algorithms, cryptography, and their integration with classical systems.
           </motion.p>
         </motion.div>
       </div>

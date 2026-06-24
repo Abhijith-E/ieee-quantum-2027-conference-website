@@ -21,8 +21,8 @@ export default function EthicsContent() {
     },
     {
       title: "Dual Submission Policy",
-      statement: "Papers submitted to CQTCS must not be under review concurrently at any other journal or conference with published proceedings.",
-      examples: "Submitting to CQTCS and an overlapping arXiv preprint is allowed. Submitting to CQTCS and another IEEE conference simultaneously is strictly prohibited.",
+      statement: "Papers submitted to ICQST must not be under review concurrently at any other journal or conference with published proceedings.",
+      examples: "Submitting to ICQST and an overlapping arXiv preprint is allowed. Submitting to ICQST and another IEEE conference simultaneously is strictly prohibited.",
       remediation: "Dual submissions will be withdrawn from the review process, and the authors may be banned from submitting to future iterations of the conference."
     },
     {
@@ -76,7 +76,7 @@ export default function EthicsContent() {
 
         <div className="prose prose-slate max-w-none text-slate-600">
           <p>
-            The IEEE International Conference on Quantum Technologies and Computer Science (CQTCS) is dedicated to providing a harassment-free and rigorously peer-reviewed conference experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, or religion.
+            The IEEE International International Conference on Quantum Science and Technologies (ICQST) is dedicated to providing a harassment-free and rigorously peer-reviewed conference experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, or religion.
           </p>
           <p>
             We do not tolerate harassment of conference participants in any form. Scientific integrity forms the bedrock of our proceedings, and we expect all authors, reviewers, and organizers to adhere to strict ethical guidelines during the paper submission and presentation process.
@@ -161,7 +161,7 @@ export default function EthicsContent() {
         <h2 className="text-3xl font-bold text-navy mb-8">Review Integrity & COI Handling</h2>
         <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200 mb-8">
           <p className="text-slate-600 mb-8">
-            CQTCS employs a strict <strong>Double-Blind Peer Review</strong> process. The identities of both the authors and the reviewers are kept hidden from each other to ensure unbiased evaluation. Reviewers must navigate a rigid Conflict of Interest (COI) handling pipeline:
+            ICQST employs a strict <strong>Double-Blind Peer Review</strong> process. The identities of both the authors and the reviewers are kept hidden from each other to ensure unbiased evaluation. Reviewers must navigate a rigid Conflict of Interest (COI) handling pipeline:
           </p>
 
           <div className="relative">
@@ -210,7 +210,7 @@ export default function EthicsContent() {
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-gold rounded-full"></div>
-                <span className="font-medium">Email: <a href="mailto:ethics@cqtcs.in" className="text-gold hover:underline">ethics@cqtcs.in</a></span>
+                <span className="font-medium">Email: <a href="mailto:ethics@icqst.in" className="text-gold hover:underline">ethics@icqst.in</a></span>
               </div>
             </div>
             <button className="bg-white text-navy font-bold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors w-full sm:w-auto">

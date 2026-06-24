@@ -24,9 +24,9 @@ const paragraphVariants: Variants = {
 
 export default function MissionScope() {
   const paragraphs = [
-    "The IEEE International Conference on Quantum Technologies and Computer Science (CQTCS) is dedicated to advancing the theoretical foundations and practical applications of quantum computing. Our mission is to bridge the gap between abstract quantum mechanics and tangible computer science methodologies, fostering an ecosystem of innovation that accelerates the development of scalable quantum systems.",
-    "As we stand on the precipice of quantum advantage, CQTCS serves as a critical nexus for interdisciplinary dialogue. We bring together physicists, computer scientists, mathematicians, and engineers from academia and industry to address the most pressing challenges in quantum error correction, algorithmic complexity, and quantum-classical hybrid architectures.",
-    "Our scope encompasses a wide array of topics, from fundamental quantum information theory to applied quantum cryptography and quantum machine learning. By facilitating rigorous peer-reviewed discourse and providing a platform for early-stage researchers, CQTCS is committed to shaping the standards, ethics, and technological pathways that will define the next century of computation."
+    "The IEEE International International Conference on Quantum Science and Technologies (ICQST) is dedicated to advancing the theoretical foundations and practical applications of quantum computing. Our mission is to bridge the gap between abstract quantum mechanics and tangible computer science methodologies, fostering an ecosystem of innovation that accelerates the development of scalable quantum systems.",
+    "As we stand on the precipice of quantum advantage, ICQST serves as a critical nexus for interdisciplinary dialogue. We bring together physicists, computer scientists, mathematicians, and engineers from academia and industry to address the most pressing challenges in quantum error correction, algorithmic complexity, and quantum-classical hybrid architectures.",
+    "Our scope encompasses a wide array of topics, from fundamental quantum information theory to applied quantum cryptography and quantum machine learning. By facilitating rigorous peer-reviewed discourse and providing a platform for early-stage researchers, ICQST is committed to shaping the standards, ethics, and technological pathways that will define the next century of computation."
   ];
 
   return (

@@ -14,7 +14,7 @@ export default function WeatherWidget() {
             <CloudSun size={48} className="text-gold drop-shadow-md" />
             <div className="text-5xl font-extrabold text-white">24<span className="text-3xl text-white/50">°C</span></div>
           </div>
-          <h3 className="text-2xl font-bold text-white mb-2">November Weather</h3>
+          <h3 className="text-2xl font-bold text-white mb-2">February Weather</h3>
           <p className="text-white/70 font-medium text-sm">Average conditions during the conference</p>
         </div>
 
@@ -40,7 +40,7 @@ export default function WeatherWidget() {
 
       <div className="mt-4 text-center">
         <p className="text-sm font-medium text-slate-500">
-          <span className="text-gold-dark font-bold">Packing Tip:</span> Pack light layers — Bengaluru weather is highly pleasant and cool during November.
+          <span className="text-gold-dark font-bold">Packing Tip:</span> Pack light layers — Bengaluru weather is highly pleasant and cool during February.
         </p>
       </div>
     </div>

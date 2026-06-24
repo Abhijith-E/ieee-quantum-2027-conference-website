@@ -22,13 +22,13 @@ export default function BrandingRequirements() {
               <div className="w-3/4 h-2 bg-slate-300 rounded" />
             </div>
 
-            {/* IEEE & CQTCS Logos */}
+            {/* IEEE & ICQST Logos */}
             <div className="flex gap-1">
               <div className="w-10 h-10 bg-emerald-100 border border-emerald-300 border-dashed rounded flex flex-col items-center justify-center">
                 <span className="text-[7px] font-bold text-emerald-800">IEEE</span>
               </div>
               <div className="w-10 h-10 bg-gold/20 border border-gold border-dashed rounded flex flex-col items-center justify-center">
-                <span className="text-[7px] font-bold text-gold-dark">CQTCS</span>
+                <span className="text-[7px] font-bold text-gold-dark">ICQST</span>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ export default function BrandingRequirements() {
             <li className="flex items-start gap-4">
               <div className="w-8 h-8 rounded-full bg-amber-100 text-amber-800 font-black flex items-center justify-center shrink-0">3</div>
               <div>
-                <h4 className="font-bold text-navy">CQTCS 2026 Logo (Top Right)</h4>
+                <h4 className="font-bold text-navy">ICQST 2027 Logo (Top Right)</h4>
                 <p className="text-sm text-slate-500">The conference logo goes adjacent to the IEEE logo.</p>
               </div>
             </li>

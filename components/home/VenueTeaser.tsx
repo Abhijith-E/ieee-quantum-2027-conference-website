@@ -56,7 +56,7 @@ export default function VenueTeaser() {
               <div className="flex items-start gap-4">
                 <Calendar className="text-gold shrink-0 mt-1" size={24} />
                 <div>
-                  <p className="text-navy font-semibold text-lg">November 15–17, 2026</p>
+                  <p className="text-navy font-semibold text-lg">February 17–19, 2027</p>
                   <p className="text-slate-600">Three days of intensive sessions and networking</p>
                 </div>
               </div>

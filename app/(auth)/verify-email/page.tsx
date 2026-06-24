@@ -2,8 +2,8 @@ import React from 'react';
 import VerifyEmailContent from '@/components/auth/VerifyEmailContent';
 
 export const metadata = {
-  title: 'Verify Email - IEEE CQTCS 2026',
-  description: 'Verify your email address to activate your IEEE CQTCS 2026 account.',
+  title: 'Verify Email - IEEE ICQST 2027',
+  description: 'Verify your email address to activate your IEEE ICQST 2027 account.',
 };
 
 export default function VerifyEmailPage() {

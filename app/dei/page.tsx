@@ -3,8 +3,8 @@ import DeiHero from '@/components/dei/DeiHero';
 import DeiContent from '@/components/dei/DeiContent';
 
 export const metadata = {
-  title: 'Diversity, Equity & Inclusion - IEEE CQTCS 2026',
-  description: 'IEEE CQTCS is actively committed to removing barriers to participation and amplifying voices from all backgrounds.',
+  title: 'Diversity, Equity & Inclusion - IEEE ICQST 2027',
+  description: 'IEEE ICQST is actively committed to removing barriers to participation and amplifying voices from all backgrounds.',
 };
 
 export default function DeiPage() {

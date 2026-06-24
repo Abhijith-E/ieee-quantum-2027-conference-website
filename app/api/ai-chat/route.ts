@@ -25,10 +25,10 @@ export async function POST(req: Request) {
     const { messages } = await req.json();
     const lastMessage = messages[messages.length - 1]?.content?.toLowerCase() || "";
     
-    let mockResponse = "I am the official AI assistant for IEEE CQTCS 2026. How can I help you with your conference experience today?";
+    let mockResponse = "I am the official AI assistant for IEEE ICQST 2027. How can I help you with your conference experience today?";
     
     if (lastMessage.includes("deadline") || lastMessage.includes("when")) {
-      mockResponse = "The final camera-ready paper submission deadline is September 15, 2026. Early-bird registration closes on October 1, 2026.";
+      mockResponse = "The final camera-ready paper submission deadline is September 15, 2027. Early-bird registration closes on October 1, 2027.";
     } else if (lastMessage.includes("book") || lastMessage.includes("schedule")) {
       mockResponse = "I have successfully added this session to your personal schedule! You can view it in your Dashboard under 'My Schedule'.";
     } else if (lastMessage.includes("venue") || lastMessage.includes("reach") || lastMessage.includes("travel")) {

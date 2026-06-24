@@ -4,10 +4,10 @@ import React, { useState, useEffect } from 'react';
 import { Calendar, Clock } from 'lucide-react';
 
 const dates = [
-  { id: 1, event: 'Abstract Submission', date: new Date('2026-03-30T23:59:59') },
-  { id: 2, event: 'Full Paper Deadline', date: new Date('2026-04-15T23:59:59') },
-  { id: 3, event: 'Author Notification', date: new Date('2026-07-01T23:59:59') },
-  { id: 4, event: 'Camera-Ready Due', date: new Date('2026-08-15T23:59:59') },
+  { id: 1, event: 'Abstract Submission', date: new Date('2027-03-30T23:59:59') },
+  { id: 2, event: 'Full Paper Deadline', date: new Date('2027-04-15T23:59:59') },
+  { id: 3, event: 'Author Notification', date: new Date('2027-07-01T23:59:59') },
+  { id: 4, event: 'Camera-Ready Due', date: new Date('2027-08-15T23:59:59') },
 ];
 
 // Helper to determine status

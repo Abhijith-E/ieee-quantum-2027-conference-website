@@ -22,8 +22,8 @@ const REGISTRATION_DATA = {
   paymentDate: "October 12, 2025",
   transactionId: "TXN-9876543210ABC",
   workshops: [
-    { id: 1, title: "Qiskit Hackathon Pre-Conference", date: "Dec 10, 2026", fee: "$50.00 USD" },
-    { id: 2, title: "Tensor Network Masterclass", date: "Dec 11, 2026", fee: "$150.00 USD" }
+    { id: 1, title: "Qiskit Hackathon Pre-Conference", date: "Dec 10, 2027", fee: "$50.00 USD" },
+    { id: 2, title: "Tensor Network Masterclass", date: "Dec 11, 2027", fee: "$150.00 USD" }
   ]
 };
 
@@ -78,7 +78,7 @@ export default function RegistrationContent() {
           <CheckCircle2 size={24} className="text-emerald-500" />
           <div>
             <h3 className="font-bold text-emerald-800">Registration Confirmed</h3>
-            <p className="text-sm text-emerald-600">Your spot at IEEE CQTCS 2026 is secured.</p>
+            <p className="text-sm text-emerald-600">Your spot at IEEE ICQST 2027 is secured.</p>
           </div>
         </div>
 

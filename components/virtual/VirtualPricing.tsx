@@ -38,7 +38,7 @@ export default function VirtualPricing() {
               <div className="flex items-center justify-between border-b border-slate-100 pb-4">
                 <div>
                   <div className="font-bold text-navy text-lg">Regular</div>
-                  <div className="text-sm text-slate-500">Oct 2 – Nov 1, 2027</div>
+                  <div className="text-sm text-slate-500">Oct 2 – Feb 1, 2027</div>
                 </div>
                 <div className="text-2xl font-bold text-slate-700">₹1,500 <span className="text-sm font-medium text-slate-400">/ $50</span></div>
               </div>
@@ -46,7 +46,7 @@ export default function VirtualPricing() {
               <div className="flex items-center justify-between">
                 <div>
                   <div className="font-bold text-navy text-lg">Late / On-Site</div>
-                  <div className="text-sm text-slate-500">After Nov 1, 2027</div>
+                  <div className="text-sm text-slate-500">After Feb 1, 2027</div>
                 </div>
                 <div className="text-2xl font-bold text-slate-700">₹2,000 <span className="text-sm font-medium text-slate-400">/ $70</span></div>
               </div>
