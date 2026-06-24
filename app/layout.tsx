@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import QueryProvider from "@/components/providers/QueryProvider";
+import AIAssistantWidget from "@/components/ai/AIAssistantWidget";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -35,6 +36,7 @@ export default function RootLayout({
         <QueryProvider>
           <Navbar />
           {children}
+          <AIAssistantWidget />
           <Footer />
         </QueryProvider>
       </body>

@@ -9,6 +9,8 @@ import { ChevronDown } from 'lucide-react';
 import { colors } from '@/lib/tokens';
 import CountdownTimer from '@/components/shared/CountdownTimer';
 import Link from 'next/link';
+import { Search } from 'lucide-react';
+import SearchModal from '@/components/ui/SearchModal';
 
 function ParticleBackground() {
   const ref = useRef<THREE.Points>(null);
@@ -50,6 +52,7 @@ function ParticleBackground() {
 
 
 export default function HeroSection() {
+  const [searchOpen, setSearchOpen] = useState(false);
   const title = "IEEE CQTCS 2026";
 
   return (
@@ -110,10 +113,27 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 1 }}
-          className="font-serif italic text-xl md:text-2xl text-slate-300 mb-12 max-w-2xl"
+          className="font-serif italic text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl"
         >
           Defining the Future of Quantum Technologies
         </motion.p>
+
+        {/* Global Search Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7 }}
+          className="mb-12 w-full max-w-md"
+        >
+          <button 
+            onClick={() => setSearchOpen(true)}
+            className="w-full flex items-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 rounded-2xl px-6 py-4 text-left transition-all group"
+          >
+            <Search className="text-gold w-5 h-5 group-hover:scale-110 transition-transform" />
+            <span className="text-slate-300 font-medium flex-1">Search sessions, speakers, venue...</span>
+            <span className="hidden sm:inline-block text-[10px] font-mono text-slate-400 bg-white/10 px-2 py-1 rounded">⌘K</span>
+          </button>
+        </motion.div>
 
         {/* Countdown */}
         <motion.div
@@ -168,6 +188,9 @@ export default function HeroSection() {
         <div className="w-px h-12 bg-gradient-to-b from-transparent to-slate-400 mb-2" />
         <ChevronDown size={20} />
       </motion.div>
+
+      {/* Global Search Modal */}
+      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </section>
   );
 }
