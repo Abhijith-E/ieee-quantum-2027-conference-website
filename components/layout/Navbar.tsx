@@ -106,11 +106,15 @@ export default function Navbar() {
         </div>
 
         {/* Desktop CTA */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex items-center">
+          <Link href="/dashboard" className="text-slate-200 hover:text-gold transition-colors px-4 font-semibold">
+            Dashboard
+          </Link>
+          <div className="w-px h-4 bg-slate-700 mx-1"></div>
           <Link href="/login" className="text-slate-200 hover:text-white font-semibold transition-colors px-4">
             Sign In
           </Link>
-          <Link href="/registration" className="bg-gold hover:bg-[#c4a132] text-white font-bold py-2.5 px-6 rounded-lg transition-colors shadow-sm">
+          <Link href="/registration" className="bg-gold hover:bg-[#c4a132] text-white font-bold py-2.5 px-6 rounded-lg transition-colors shadow-sm ml-2">
             Register Now
           </Link>
         </div>
@@ -215,6 +219,15 @@ export default function Navbar() {
                   )}
                 </AnimatePresence>
               </div>
+              
+              <div className="h-px w-full bg-slate-800 my-2"></div>
+              
+              <Link href="/dashboard" className="flex items-center justify-between w-full py-3 text-lg font-semibold text-slate-300 hover:text-gold transition-colors">
+                Dashboard
+              </Link>
+              <Link href="/login" className="flex items-center justify-between w-full py-3 text-lg font-semibold text-slate-300 hover:text-white transition-colors">
+                Sign In
+              </Link>
               
               <Link href="/registration" className="mt-6 flex items-center justify-center w-full bg-gold text-navy font-bold py-3 rounded-xl uppercase tracking-wide text-lg">
                 Register Now
