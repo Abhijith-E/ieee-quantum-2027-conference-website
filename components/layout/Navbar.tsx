@@ -32,6 +32,7 @@ const PROGRAM_ITEMS: DropdownItem[] = [
   { name: 'Keynotes & Speakers', path: '/speakers' },
   { name: 'Research Tracks', path: '/tracks' },
   { name: 'Social Events', path: '/social-events' },
+  { name: 'Best Paper Awards', path: '/awards' },
 ];
 
 const CFP_ITEMS: DropdownItem[] = [
