@@ -23,6 +23,7 @@ const ABOUT_ITEMS: DropdownItem[] = [
   { name: 'Sponsors & Partners', path: '/sponsors' },
   { name: 'Careers Board', path: '/careers' },
   { name: 'Downloads Hub', path: '/downloads' },
+  { name: 'Code of Conduct & Ethics', path: '/ethics' },
 ];
 
 const PROGRAM_ITEMS: DropdownItem[] = [
