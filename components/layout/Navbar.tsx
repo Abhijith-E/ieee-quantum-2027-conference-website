@@ -27,6 +27,7 @@ const ABOUT_ITEMS: DropdownItem[] = [
   { name: 'Diversity, Equity & Inclusion', path: '/dei' },
   { name: 'Press & Media', path: '/press' },
   { name: 'Frequently Asked Questions', path: '/faq' },
+  { name: 'Contact Us', path: '/contact' },
 ];
 
 const PROGRAM_ITEMS: DropdownItem[] = [
