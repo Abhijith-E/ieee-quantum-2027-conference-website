@@ -215,7 +215,7 @@ export default function LoginContent() {
                 <input type="checkbox" className="w-4 h-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500 cursor-pointer" />
                 <span className="text-sm text-slate-600 group-hover:text-navy transition-colors">Remember me</span>
               </label>
-              <Link href="#" className="text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors">
+              <Link href="/forgot-password" className="text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors">
                 Forgot password?
               </Link>
             </div>
