@@ -148,22 +148,10 @@ export default function SignupContent() {
     <div className="min-h-screen w-full flex flex-col md:flex-row bg-slate-50">
       
       {/* Left Half - Branding & Testimonial (Desktop Only) */}
-      <div className="hidden md:flex md:w-5/12 bg-navy relative flex-col justify-between p-12 lg:p-16 overflow-hidden sticky top-0 h-screen">
+      <div className="hidden md:flex md:w-5/12 bg-navy relative flex-col justify-between p-12 lg:p-16 pt-32 overflow-hidden sticky top-0 h-screen">
         <Particles />
         
-        <div className="relative z-10">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-gold text-navy rounded-lg flex items-center justify-center font-bold text-xl shadow-lg group-hover:scale-105 transition-transform">
-              Q
-            </div>
-            <div>
-              <div className="text-white font-bold tracking-widest text-sm">IEEE ICQST</div>
-              <div className="text-blue-300 text-xs">BENGALURU 2027</div>
-            </div>
-          </Link>
-        </div>
-
-        <div className="relative z-10 max-w-lg">
+        <div className="relative z-10 max-w-lg mt-10">
           <Quote className="text-gold/40 mb-6" size={48} />
           <h2 className="text-3xl font-bold text-white leading-tight mb-8">
             "The premier venue for discovering the next generation of quantum breakthroughs."
@@ -183,14 +171,9 @@ export default function SignupContent() {
       </div>
 
       {/* Right Half - Signup Form */}
-      <div className="w-full md:w-7/12 flex items-center justify-center p-6 lg:p-12 py-16">
+      <div className="w-full md:w-7/12 flex items-center justify-center p-6 lg:p-12 py-16 pt-32">
         
-        <div className="absolute top-6 left-6 md:hidden">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-navy text-gold rounded-lg flex items-center justify-center font-bold">Q</div>
-            <span className="text-navy font-bold text-sm">ICQST 2027</span>
-          </Link>
-        </div>
+
 
         <div className="w-full max-w-2xl bg-white rounded-3xl p-8 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100">
           

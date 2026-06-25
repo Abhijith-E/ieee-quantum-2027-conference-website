@@ -18,31 +18,31 @@ async function getSpeakers(): Promise<Speaker[]> {
       id: '1',
       name: 'Dr. Sarah Chen',
       institution: 'MIT Quantum Lab',
-      imageUrl: ''
+      imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop'
     },
     {
       id: '2',
       name: 'Prof. James K. Fowler',
       institution: 'Oxford University',
-      imageUrl: ''
+      imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop'
     },
     {
       id: '3',
       name: 'Dr. Elena Rostova',
       institution: 'CERN',
-      imageUrl: ''
+      imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop'
     },
     {
       id: '4',
       name: 'Dr. Kenji Tanaka',
       institution: 'Tokyo Institute of Technology',
-      imageUrl: ''
+      imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop'
     },
     {
       id: '5',
       name: 'Prof. Alice Williams',
       institution: 'Stanford University',
-      imageUrl: ''
+      imageUrl: 'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?q=80&w=800&auto=format&fit=crop'
     }
   ];
 }

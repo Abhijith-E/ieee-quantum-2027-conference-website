@@ -181,7 +181,7 @@ export default function AIAssistantWidget() {
                   value={input}
                   onChange={handleInputChange}
                   placeholder="Ask anything about ICQST 2027..."
-                  className="w-full pl-4 pr-12 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm focus:outline-none focus:border-gold focus:ring-4 focus:ring-gold/20 transition-all"
+                  className="w-full pl-4 pr-12 py-3.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:ring-4 focus:ring-gold/20 transition-all"
                   disabled={isLoading}
                 />
                 <button

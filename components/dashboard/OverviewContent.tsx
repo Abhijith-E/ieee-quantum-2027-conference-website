@@ -49,7 +49,7 @@ export default function OverviewContent() {
   const actions = [
     { title: "Submit Paper", icon: Upload, href: "/dashboard/submissions" },
     { title: "Download Receipt", icon: Download, href: "/dashboard/registration" },
-    { title: "Request Visa Letter", icon: Mail, href: "#" },
+    { title: "Request Visa Letter", icon: Mail, href: "/visa" },
     { title: "View My Schedule", icon: Eye, href: "/dashboard/schedule" },
   ];
 

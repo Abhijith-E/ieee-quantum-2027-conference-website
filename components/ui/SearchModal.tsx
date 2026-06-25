@@ -9,17 +9,61 @@ import {
   Calendar, 
   User, 
   FileText,
-  Sparkles
+  Sparkles,
+  Info,
+  Trophy,
+  Plane,
+  CreditCard,
+  Briefcase,
+  Users,
+  Video,
+  Newspaper,
+  HelpCircle,
+  Clock,
+  Heart,
+  Download,
+  Scale,
+  ShieldCheck,
+  Building
 } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
-const MOCK_RESULTS = [
-  { id: 1, type: "Session", title: "Keynote: The Decade of Quantum Utility", icon: Calendar, href: "/program#session-1" },
-  { id: 2, type: "Venue", title: "Main Auditorium (Christ University)", icon: MapPin, href: "/venue" },
-  { id: 3, type: "Venue", title: "Accommodation & Partner Hotels", icon: MapPin, href: "/accommodation" },
-  { id: 4, type: "Speaker", title: "Dr. Sarah Jenkins (MIT)", icon: User, href: "/speakers" },
-  { id: 5, type: "Submission", title: "Camera-Ready Guidelines", icon: FileText, href: "/abstract-submission" },
+const SEARCH_DATA = [
+  { id: 1, type: "Information", title: "About the Conference", icon: Info, href: "/about" },
+  { id: 2, type: "Submission", title: "Abstract Submission Guidelines", icon: FileText, href: "/abstract-submission" },
+  { id: 3, type: "Venue", title: "Accommodation & Hotels", icon: MapPin, href: "/accommodation" },
+  { id: 4, type: "Tool", title: "AI Assistant", icon: Sparkles, href: "/ai-assistant" },
+  { id: 5, type: "Information", title: "Awards & Honors", icon: Trophy, href: "/awards" },
+  { id: 6, type: "Submission", title: "Call for Papers", icon: FileText, href: "/call-for-papers" },
+  { id: 7, type: "Information", title: "Careers in Quantum", icon: Briefcase, href: "/careers" },
+  { id: 8, type: "People", title: "Organizing Committee", icon: Users, href: "/committee" },
+  { id: 9, type: "Information", title: "Contact Us", icon: HelpCircle, href: "/contact" },
+  { id: 10, type: "Schedule", title: "Important Dates & Deadlines", icon: Clock, href: "/dates" },
+  { id: 11, type: "Information", title: "Diversity, Equity & Inclusion", icon: Heart, href: "/dei" },
+  { id: 12, type: "Resource", title: "Downloads & Templates", icon: Download, href: "/downloads" },
+  { id: 13, type: "Information", title: "Code of Ethics", icon: Scale, href: "/ethics" },
+  { id: 14, type: "Information", title: "Frequently Asked Questions", icon: HelpCircle, href: "/faq" },
+  { id: 15, type: "Travel", title: "How to Reach the Venue", icon: Plane, href: "/how-to-reach" },
+  { id: 16, type: "People", title: "Patrons & Advisory Board", icon: ShieldCheck, href: "/patrons" },
+  { id: 17, type: "Travel", title: "Places to Visit in Bangalore", icon: MapPin, href: "/places-to-visit" },
+  { id: 18, type: "Submission", title: "Poster Presentation Guidelines", icon: FileText, href: "/poster-guidelines" },
+  { id: 19, type: "Program", title: "Pre-Conference Tutorials", icon: Calendar, href: "/pre-conference" },
+  { id: 20, type: "Information", title: "Press & Media", icon: Newspaper, href: "/press" },
+  { id: 21, type: "Resource", title: "Conference Proceedings", icon: FileText, href: "/proceedings" },
+  { id: 22, type: "Program", title: "Main Conference Program", icon: Calendar, href: "/program" },
+  { id: 23, type: "Registration", title: "Register for ICQST 2027", icon: CreditCard, href: "/registration" },
+  { id: 24, type: "People", title: "Scientific Advisory Committee", icon: Users, href: "/scientific-advisory-committee" },
+  { id: 25, type: "Program", title: "Social Events & Gala Dinner", icon: Calendar, href: "/social-events" },
+  { id: 26, type: "People", title: "Keynote Speakers", icon: User, href: "/speakers" },
+  { id: 27, type: "Information", title: "Sponsors & Exhibitors", icon: Building, href: "/sponsors" },
+  { id: 28, type: "Program", title: "Conference Tracks & Chairs", icon: Calendar, href: "/tracks" },
+  { id: 29, type: "Venue", title: "CHRIST University Venue", icon: MapPin, href: "/venue" },
+  { id: 30, type: "Program", title: "Virtual Participation", icon: Video, href: "/virtual" },
+  { id: 31, type: "Travel", title: "Visa Request & Information", icon: Plane, href: "/visa" },
+  { id: 32, type: "Program", title: "Workshops", icon: Calendar, href: "/workshops" },
+  { id: 33, type: "Session", title: "Keynote: The Decade of Quantum Utility", icon: Calendar, href: "/program" },
+  { id: 34, type: "Speaker", title: "Dr. Sarah Jenkins (MIT)", icon: User, href: "/speakers" },
 ];
 
 export default function SearchModal({ 
@@ -48,7 +92,7 @@ export default function SearchModal({
     return () => { document.body.style.overflow = 'unset'; };
   }, [isOpen]);
 
-  const filteredResults = MOCK_RESULTS.filter(r => 
+  const filteredResults = SEARCH_DATA.filter(r => 
     r.title.toLowerCase().includes(query.toLowerCase()) || 
     r.type.toLowerCase().includes(query.toLowerCase())
   );

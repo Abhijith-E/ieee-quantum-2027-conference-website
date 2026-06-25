@@ -33,7 +33,7 @@ export default function ForgotPasswordContent() {
   };
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-slate-50 p-6 relative overflow-hidden">
+    <div className="min-h-screen w-full flex items-center justify-center bg-slate-50 p-6 pt-32 relative overflow-hidden">
       
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-1/2 bg-navy -z-10 rounded-b-[40%] shadow-xl"></div>

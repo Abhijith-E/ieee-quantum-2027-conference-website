@@ -70,10 +70,31 @@ export default function Navbar() {
     setIsMobileMenuOpen(false);
   }, [pathname]);
 
+  const [hoveredNav, setHoveredNav] = useState<string | null>(null);
+
+  // Hide Navbar completely on dashboard
+  if (pathname?.startsWith('/dashboard')) {
+    return null;
+  }
+
+  const isAuthPage = ['/login', '/signup', '/forgot-password', '/verify-email'].includes(pathname || '');
+  const isSolid = isScrolled || isAuthPage;
+
+  // Determine which nav item corresponds to the current path
+  const getActiveNavName = () => {
+    if (pathname === '/') return 'Home';
+    if (ABOUT_ITEMS.some(i => i.path === pathname)) return 'About';
+    if (PROGRAM_ITEMS.some(i => i.path === pathname)) return 'Program';
+    if (CFP_ITEMS.some(i => i.path === pathname)) return 'CFP';
+    return null;
+  };
+
+  const currentActiveNav = hoveredNav || getActiveNavName();
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#0a0f1c]/95 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-5'
+        isSolid ? 'bg-[#0a0f1c]/95 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -90,19 +111,63 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          <Link 
-            href="/" 
-            className={`font-medium transition-colors ${pathname === '/' ? 'text-gold' : 'text-slate-300 hover:text-white'}`}
+        <div 
+          className="hidden md:flex items-center gap-1 relative"
+          onMouseLeave={() => setHoveredNav(null)}
+        >
+          {/* Home */}
+          <div 
+            className="relative px-4 rounded-full flex items-center"
+            onMouseEnter={() => setHoveredNav('Home')}
           >
-            Home
-          </Link>
-          
-          <NavDropdown label="About" items={ABOUT_ITEMS} />
-          
-          <NavDropdown label="Program" items={PROGRAM_ITEMS} />
-          
-          <NavDropdown label="Call for Papers" items={CFP_ITEMS} />
+            {currentActiveNav === 'Home' && (
+              <motion.div layoutId="navPill" className="absolute inset-0 bg-white/10 rounded-full" transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }} />
+            )}
+            <div className="relative z-10">
+              <Link href="/" className={`block py-2 font-medium transition-colors ${pathname === '/' ? 'text-gold' : 'text-slate-300 hover:text-white'}`}>
+                Home
+              </Link>
+            </div>
+          </div>
+
+          {/* About */}
+          <div 
+            className="relative px-4 rounded-full flex items-center"
+            onMouseEnter={() => setHoveredNav('About')}
+          >
+            {currentActiveNav === 'About' && (
+              <motion.div layoutId="navPill" className="absolute inset-0 bg-white/10 rounded-full" transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }} />
+            )}
+            <div className="relative z-10">
+              <NavDropdown label="About" items={ABOUT_ITEMS} />
+            </div>
+          </div>
+
+          {/* Program */}
+          <div 
+            className="relative px-4 rounded-full flex items-center"
+            onMouseEnter={() => setHoveredNav('Program')}
+          >
+            {currentActiveNav === 'Program' && (
+              <motion.div layoutId="navPill" className="absolute inset-0 bg-white/10 rounded-full" transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }} />
+            )}
+            <div className="relative z-10">
+              <NavDropdown label="Program" items={PROGRAM_ITEMS} />
+            </div>
+          </div>
+
+          {/* Call for Papers */}
+          <div 
+            className="relative px-4 rounded-full flex items-center"
+            onMouseEnter={() => setHoveredNav('CFP')}
+          >
+            {currentActiveNav === 'CFP' && (
+              <motion.div layoutId="navPill" className="absolute inset-0 bg-white/10 rounded-full" transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }} />
+            )}
+            <div className="relative z-10">
+              <NavDropdown label="Call for Papers" items={CFP_ITEMS} />
+            </div>
+          </div>
         </div>
 
         {/* Desktop CTA */}

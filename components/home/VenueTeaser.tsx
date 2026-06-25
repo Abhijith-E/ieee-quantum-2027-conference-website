@@ -21,12 +21,14 @@ export default function VenueTeaser() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="w-full lg:w-1/2 aspect-video lg:aspect-auto relative bg-slate-200"
           >
-            {/* Placeholder for Campus Photo */}
-            <div className="absolute inset-0 bg-navy/5 flex items-center justify-center">
-              <span className="text-slate-400 font-medium">CHRIST University Campus Photo</span>
-            </div>
-            {/* If you have the real image, replace with next/image */}
-            {/* <Image src="/venue.jpg" alt="Conference Venue" fill className="object-cover" /> */}
+            {/* Image of Campus */}
+            <img 
+              src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop" 
+              alt="CHRIST University Campus" 
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 hover:scale-105" 
+            />
+            {/* Subtle overlay for richness */}
+            <div className="absolute inset-0 bg-navy/10 mix-blend-multiply pointer-events-none" />
           </motion.div>
 
           {/* Right Half: Content */}

@@ -3,9 +3,15 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const pathname = usePathname();
+
+  if (pathname?.startsWith('/dashboard')) {
+    return null;
+  }
 
   return (
     <footer className="w-full bg-[#0a0f1c] border-t border-slate-800 text-slate-300 py-12 relative overflow-hidden mt-auto">

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const ParticleCanvas = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -94,18 +95,29 @@ export default function FinalCTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.button
+            <motion.div
               whileHover={{ scale: 1.03, boxShadow: '0 0 32px rgba(212,175,55,0.4)' }}
-              className="bg-gold text-navy-deep font-bold rounded-xl px-8 py-4 transition-colors"
+              className="inline-block"
             >
-              Register Now
-            </motion.button>
-            <motion.button
+              <Link 
+                href="/registration" 
+                className="bg-gold text-navy-deep font-bold rounded-xl px-8 py-4 transition-colors inline-block w-full sm:w-auto text-center"
+              >
+                Register Now
+              </Link>
+            </motion.div>
+
+            <motion.div
               whileHover={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
-              className="border-2 border-white/20 text-white rounded-xl px-8 py-4 backdrop-blur-sm"
+              className="inline-block border-2 border-white/20 rounded-xl backdrop-blur-sm transition-colors"
             >
-              Call for Papers
-            </motion.button>
+              <Link 
+                href="/call-for-papers" 
+                className="text-white px-8 py-4 inline-block w-full sm:w-auto text-center font-medium"
+              >
+                Call for Papers
+              </Link>
+            </motion.div>
           </div>
         </motion.div>
       </div>

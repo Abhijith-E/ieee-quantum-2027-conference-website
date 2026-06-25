@@ -196,7 +196,7 @@ export default function AIAssistantFullPage() {
               value={input}
               onChange={handleInputChange}
               placeholder="Ask the assistant anything..."
-              className="w-full pl-6 pr-14 py-4 bg-slate-50 border border-slate-200 rounded-full text-base focus:outline-none focus:border-gold focus:ring-4 focus:ring-gold/20 transition-all shadow-inner"
+              className="w-full pl-6 pr-14 py-4 bg-slate-50 border border-slate-200 rounded-full text-base text-navy placeholder:text-slate-400 focus:outline-none focus:border-gold focus:ring-4 focus:ring-gold/20 transition-all shadow-inner"
               disabled={isLoading}
             />
             <button
